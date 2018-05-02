@@ -45,9 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ORMDataModel1Code\ConnectionHelper.cs" />
-    <Compile Include="ORMDataModel1Code\MyObject1.cs" />
-    <Compile Include="ORMDataModel1Code\MyObject1.Designer.cs">
-      <DependentUpon>MyObject1.cs</DependentUpon>
+    <Compile Include="ORMDataModel1Code\Contact.cs" />
+    <Compile Include="ORMDataModel1Code\Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
