@@ -26,6 +26,7 @@ namespace dxTestSolution.Web {
             WebApplication.SetInstance(Session, new dxTestSolutionAspNetApplication());
 			DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
             WebApplication.Instance.SwitchToNewStyle();
+			//secur#7
             if(ConfigurationManager.ConnectionStrings["ConnectionString"] != null) {
                 WebApplication.Instance.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             }
@@ -40,6 +41,7 @@ namespace dxTestSolution.Web {
             WebApplication.Instance.Setup();
             WebApplication.Instance.Start();
         }
+		//secur#6
         protected void Application_BeginRequest(Object sender, EventArgs e) {
         }
         protected void Application_EndRequest(Object sender, EventArgs e) {

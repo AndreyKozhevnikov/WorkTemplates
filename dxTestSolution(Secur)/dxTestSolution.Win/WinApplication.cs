@@ -5,6 +5,7 @@ using DevExpress.ExpressApp.Win;
 using System.Collections.Generic;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
+using DevExpress.ExpressApp.Security;
 
 namespace dxTestSolution.Win {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWinWinApplicationMembersTopicAll.aspx
@@ -23,7 +24,9 @@ namespace dxTestSolution.Win {
         public dxTestSolutionWindowsFormsApplication() {
             InitializeComponent();
 			InitializeDefaults();
+			//secur#5
         }
+		//secur#6
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             //args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false));
 			args.ObjectSpaceProvider = new XPObjectSpaceProvider(InMemoryDataStoreProvider.ConnectionString, null, false);

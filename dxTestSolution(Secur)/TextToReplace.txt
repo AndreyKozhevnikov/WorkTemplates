@@ -5,8 +5,10 @@
 <File>\{0}.Module\Module.Designer.cs</File>
 <File>\{0}.Module\{0}.Module.csproj</File>
 <File>\{0}.Win\WinApplication.Designer.cs</File>
+<File>\{0}.Win\WinApplication.cs</File>
 <File>\{0}.Win\{0}.Win.csproj</File>
 <File>\{0}.Web\{0}.Web.csproj</File>
+<File>\{0}.Web\Global.asax.cs</File>
 <File>\{0}.Web\WebApplication.cs</File>
 <File>\{0}.Web\Web.config</File>
 </Files>
@@ -86,6 +88,25 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
               this.Modules.Add(this.securityModule1);
             this.Security = this.securityStrategyComplex1;
 </Item>
+
+<Item marker="//secur#5" token="security">
+            this.LastLogonParametersRead += MyApplication_LastLogonParametersRead;
+</Item>
+<Item marker="//secur#6" token="security">
+            private void MyApplication_LastLogonParametersRead(object sender, LastLogonParametersReadEventArgs e) {
+              AuthenticationStandardLogonParameters logonParameters = e.LogonObject as AuthenticationStandardLogonParameters;
+              if(logonParameters != null) {
+                if(String.IsNullOrEmpty(logonParameters.UserName)) {
+                    logonParameters.UserName = "Admin";
+                }
+              }
+            }
+</Item>
+<Item marker="//secur#7" token="security">
+            WebApplication.Instance.LastLogonParametersRead += MyApplication_LastLogonParametersRead;
+</Item>
+
+
 <Item marker="//report#0" token="report">
             this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
             this.reportsWindowsFormsModuleV21 = new DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2();
