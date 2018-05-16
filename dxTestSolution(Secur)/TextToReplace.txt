@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Replace>
+<Files>
+<File>\{0}.Module\DatabaseUpdate\Updater.cs</File>
+<File>\{0}.Module\Module.Designer.cs</File>
+<File>\{0}.Module\{0}.Module.csproj</File>
+<File>\{0}.Win\WinApplication.Designer.cs</File>
+<File>\{0}.Win\{0}.Win.csproj</File>
+<File>\{0}.Web\{0}.Web.csproj</File>
+<File>\{0}.Web\WebApplication.cs</File>
+<File>\{0}.Web\Web.config</File>
+</Files>
+<Items>
+<Item marker="//secur#0" token="security">
+   
+                   PermissionPolicyRole adminRole = ObjectSpace.FindObject&lt;PermissionPolicyRole&gt;(new BinaryOperator(&quot;Name&quot;, SecurityStrategy.AdministratorRoleName));
+            if(adminRole == null) {
+                adminRole = ObjectSpace.CreateObject&lt;PermissionPolicyRole&gt;();
+                adminRole.Name = SecurityStrategy.AdministratorRoleName;
+                adminRole.IsAdministrative = true;
+            }
+
+            PermissionPolicyRole userRole = ObjectSpace.FindObject&lt;PermissionPolicyRole&gt;(new BinaryOperator(&quot;Name&quot;, &quot;Users&quot;));
+            if(userRole == null) {
+                userRole = ObjectSpace.CreateObject&lt;PermissionPolicyRole&gt;();
+                userRole.Name = &quot;Users&quot;;
+            }
+
+            userRole.AddTypePermissionsRecursively&lt;PermissionPolicyUser&gt;(SecurityOperations.FullAccess, SecurityPermissionState.Deny);
+            userRole.AddTypePermissionsRecursively&lt;PermissionPolicyRole&gt;(SecurityOperations.FullAccess, SecurityPermissionState.Deny);
+            userRole.SetTypePermission&lt;PermissionPolicyTypePermissionObject&gt;(SecurityOperations.Read, SecurityPermissionState.Allow);
+            userRole.AddObjectPermission&lt;PermissionPolicyUser&gt;(SecurityOperations.ReadOnlyAccess, &quot;[Oid] = CurrentUserId()&quot;, SecurityPermissionState.Allow);
+            //  userRole.AddNavigationPermission(&quot;Application/NavigationItems/Items/Default/Items/Contact_ListView&quot;, SecurityPermissionState.Allow);
+            userRole.AddMemberPermission&lt;PermissionPolicyUser&gt;(SecurityOperations.Write, &quot;ChangePasswordOnFirstLogon&quot;, null, SecurityPermissionState.Allow);
+            userRole.AddMemberPermission&lt;PermissionPolicyUser&gt;(SecurityOperations.Write, &quot;StoredPassword&quot;, null, SecurityPermissionState.Allow);
+            userRole.AddTypePermissionsRecursively&lt;PermissionPolicyRole&gt;(SecurityOperations.Read, SecurityPermissionState.Allow);
+            userRole.AddTypePermissionsRecursively&lt;AuditDataItemPersistent&gt;(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+            // ... 
+           
+            PermissionPolicyUser user1 = ObjectSpace.FindObject&lt;PermissionPolicyUser&gt;(
+              new BinaryOperator(&quot;UserName&quot;, &quot;Admin&quot;));
+            if(user1 == null) {
+                user1 = ObjectSpace.CreateObject&lt;PermissionPolicyUser&gt;();
+                user1.UserName = &quot;Admin&quot;;
+                // Set a password if the standard authentication type is used. 
+                user1.SetPassword(&quot;&quot;);
+            }
+            
+            PermissionPolicyUser user2 = ObjectSpace.FindObject&lt;PermissionPolicyUser&gt;(
+                 new BinaryOperator(&quot;UserName&quot;, &quot;User&quot;));
+            if(user2 == null) {
+                user2 = ObjectSpace.CreateObject&lt;PermissionPolicyUser&gt;();
+                user2.UserName = &quot;User&quot;;
+                // Set a password if the standard authentication type is used. 
+                user2.SetPassword(&quot;&quot;);
+            }
+
+            user1.Roles.Add(adminRole);
+            user2.Roles.Add(userRole);
+</Item>
+<Item marker="//secur#1" token="security">
+        private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
+        private DevExpress.ExpressApp.Security.AuthenticationStandard authenticationStandard1;
+        private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
+</Item>
+<Item marker="//secur#2" token="security">
+this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
+            this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
+            this.authenticationStandard1 = new DevExpress.ExpressApp.Security.AuthenticationStandard();
+</Item>
+<Item marker="//secur#3" token="security">
+             // 
+            // securityStrategyComplex1
+            // 
+            this.securityStrategyComplex1.Authentication = this.authenticationStandard1;
+            this.securityStrategyComplex1.RoleType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyRole);
+            this.securityStrategyComplex1.UsePermissionRequestProcessor = false;
+            this.securityStrategyComplex1.UserType = typeof(DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser);
+            // 
+            // authenticationStandard1
+            //
+            this.authenticationStandard1.LogonParametersType = typeof(DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters);
+            // 
+</Item>
+<Item marker="//secur#4" token="security">
+              this.Modules.Add(this.securityModule1);
+            this.Security = this.securityStrategyComplex1;
+</Item>
+<Item marker="//report#0" token="report">
+            this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
+            this.reportsWindowsFormsModuleV21 = new DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2();
+</Item>
+<Item marker="//report#1#" token="report">
+            // 
+            // reportsModuleV21
+            // 
+            this.reportsModuleV21.EnableInplaceReports = true;
+            this.reportsModuleV21.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
+</Item>
+<Item marker="//report#2" token="report">
+            this.Modules.Add(this.reportsModuleV21);
+            this.Modules.Add(this.reportsWindowsFormsModuleV21);
+ </Item>
+ <Item marker="//report#3" token="report">
+        private DevExpress.ExpressApp.ReportsV2.ReportsModuleV2 reportsModuleV21;
+        private DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2 reportsWindowsFormsModuleV21;
+
+ </Item>
+  <Item marker="&lt;!--//report#4--&gt;" token="report">
+    &lt;Reference Include=&quot;DevExpress.DataAccess.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Win.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    
+    &lt;Reference Include=&quot;DevExpress.Utils.v17.2.UI, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+ </Item>
+  <Item marker="&lt;!--//report#5--&gt;" token="report">
+      &lt;add name=&quot;ASPxWebDocumentViewerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
+      &lt;add name=&quot;ASPxQueryBuilderDesignerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
+
+ </Item>
+   <Item marker="&lt;!--//report#6--&gt;" token="report">
+      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+
+ </Item>
+<Item marker="&lt;!--//report#7--&gt;" token="report">
+        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v17.2.Web, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+
+ </Item>
+ <Item marker="//report#8" token="report">
+            this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.ReportsModuleV2));
+
+ </Item>
+  <Item marker="&lt;!--//report#9--&gt;" token="report">
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot;&gt;
+      &lt;SpecificVersion&gt;False&lt;/SpecificVersion&gt;
+    &lt;/Reference&gt;
+    &lt;Reference Include=&quot;DevExpress.Utils.v17.2&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2.Extensions&quot; /&gt;
+
+ </Item>
+  <Item marker="//report#10" token="report">
+        private DevExpress.ExpressApp.ReportsV2.ReportsModuleV2 reportsModuleV21;
+        private DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2 reportsAspNetModuleV21;
+
+ </Item>
+ <Item marker="//report#11" token="report">
+            this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
+            this.reportsAspNetModuleV21 = new DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2();
+
+ </Item>
+  <Item marker="//report#12" token="report">
+              // 
+            // reportsModuleV21
+            // 
+            this.reportsModuleV21.EnableInplaceReports = true;
+            this.reportsModuleV21.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
+            // 
+
+ </Item>
+   <Item marker="&lt;!--//report#13--&gt;" token="report">
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Web.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2.Extensions, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v17.2.Web, Version=17.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+
+
+ </Item>
+ <Item marker="//report#14" token="report">
+                
+            this.Modules.Add(this.reportsAspNetModuleV21);
+
+ </Item>
+</Items>
+</Replace>
+
+
+
+
+
