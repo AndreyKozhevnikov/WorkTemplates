@@ -11,6 +11,7 @@ using DevExpress.Xpo;
 using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 namespace ConsoleApp1.dxT631023 {
     public static class ConnectionHelper {
         static Type[] persistentTypes = new Type[] {
@@ -21,8 +22,9 @@ namespace ConsoleApp1.dxT631023 {
             Array.Copy(persistentTypes, copy, persistentTypes.Length);
             return copy;
         }
-        public const string ConnectionString = @"XpoProvider=MSSqlServer;data source=(localdb)\mssqllocaldb;integrated security=SSPI;initial catalog=dxT631023";
+        static string ConnectionString;
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption, bool threadSafe = false) {
+            ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             if(threadSafe) {
                 var provider = XpoDefault.GetConnectionProvider(ConnectionString, autoCreateOption);
                 var dictionary = new DevExpress.Xpo.Metadata.ReflectionDictionary();
