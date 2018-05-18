@@ -30,13 +30,11 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             for (int i = 0; i < 10; i++) {
                 string contactName = "FirstName" + i;
                 var contact = CreateObject<Contact>("FirstName", contactName);
-                contact.FirstName = contactName;
                 contact.LastName = "LastName" + i;
 				contact.Age = i * 10;
                 for(int j = 0; j < 5; j++) {
                     string taskName = "Subject" + i + " - " + j;
                     var task = CreateObject<MyTask>("Subject", taskName);
-                    task.Subject = taskName;
                     task.AssignedTo = contact;
                 }
             }
@@ -47,8 +45,10 @@ namespace dxTestSolution.Module.DatabaseUpdate {
         T CreateObject<T>(string propertyName,string value) {
        
             T theObject = ObjectSpace.FindObject<T>(new OperandProperty(propertyName) == value);
-            if (theObject == null)
+            if (theObject == null){
                 theObject = ObjectSpace.CreateObject<T>();
+                ((BaseObject)(Object)theObject).SetMemberValue(propertyName, value);
+            }
           
             return theObject;
 
