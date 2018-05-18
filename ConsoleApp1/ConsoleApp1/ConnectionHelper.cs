@@ -12,10 +12,12 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
-namespace ConsoleApp1.dxT631023 {
+using dxTestSolution.Module.BusinessObjects;
+
+namespace ConsoleApp1.dxTestSolution {
     public static class ConnectionHelper {
         static Type[] persistentTypes = new Type[] {
-            typeof(Contact)
+            typeof(Contact),typeof(MyTask)
         };
         public static Type[] GetPersistentTypes() {
             Type[] copy = new Type[persistentTypes.Length];

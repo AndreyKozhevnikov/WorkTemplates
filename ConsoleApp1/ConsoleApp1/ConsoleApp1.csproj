@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{76358B58-BE9D-4EDB-A49D-2B69F848C584}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp1</RootNamespace>
-    <AssemblyName>ConsoleApp1</AssemblyName>
+    <RootNamespace>dxTestSolution</RootNamespace>
+    <AssemblyName>dxTestSolution</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,20 +45,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ORMDataModel1Code\ConnectionHelper.cs" />
-    <Compile Include="ORMDataModel1Code\Contact.cs" />
-    <Compile Include="ORMDataModel1Code\Contact.Designer.cs">
-      <DependentUpon>Contact.cs</DependentUpon>
-    </Compile>
+    <Compile Include="BusinessObjects\Contact.cs" />
+    <Compile Include="BusinessObjects\CustomClass.cs" />
+    <Compile Include="BusinessObjects\MyTask.cs" />
+    <Compile Include="ConnectionHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ORMDataModel1.xpo" />
-    <None Include="ORMDataModel1.xpo.diagram">
-      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
