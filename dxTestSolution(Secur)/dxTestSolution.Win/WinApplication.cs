@@ -28,8 +28,11 @@ namespace dxTestSolution.Win {
         }
 		//secur#6
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
-            //args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false));
-			args.ObjectSpaceProvider = new XPObjectSpaceProvider(InMemoryDataStoreProvider.ConnectionString, null, false);
+            if(dxTestSolution.Module.dxTestSolutionModule.UseInMemoryStore) {
+                args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(InMemoryDataStoreProvider.ConnectionString, null, false));
+            } else {
+                args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false));
+            }
             args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));
         }
         private void dxTestSolutionWindowsFormsApplication_CustomizeLanguagesList(object sender, CustomizeLanguagesListEventArgs e) {

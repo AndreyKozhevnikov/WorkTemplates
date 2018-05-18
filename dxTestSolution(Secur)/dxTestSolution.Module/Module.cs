@@ -19,7 +19,9 @@ using DevExpress.ExpressApp.Xpo;
 namespace dxTestSolution.Module {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
     public sealed partial class dxTestSolutionModule : ModuleBase {
+		public static bool UseInMemoryStore;
         public dxTestSolutionModule() {
+			UseInMemoryStore = true;
             InitializeComponent();
 			BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
