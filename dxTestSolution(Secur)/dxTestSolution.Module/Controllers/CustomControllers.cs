@@ -14,19 +14,20 @@ using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using dxTestSolution.Module.BusinessObjects;
+using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.Controllers {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public class CustomController : ViewController {
         public CustomController() {
-           // var myAction1 = new SimpleAction(this, "MyAction1", null);
-          //  myAction1.Execute += MyAction1_Execute;
+            var myAction1 = new SimpleAction(this, "MyAction1", null);
+            myAction1.Execute += MyAction1_Execute;
             
         }
 
-        //private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
+        private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
            
-        //}
+        }
 
         protected override void OnActivated() {
             base.OnActivated();

@@ -11,18 +11,19 @@ using DevExpress.ExpressApp.Web.Editors.ASPx;
 using DevExpress.Web;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Editors;
+using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.Web.Controllers {
     public class CustomWebController : ViewController {
         public CustomWebController() {
-            // var myAction1 = new SimpleAction(this, "MyAction1", null);
-            //  myAction1.Execute += MyAction1_Execute;
+             var myAction1 = new SimpleAction(this, "MyAction1", null);
+              myAction1.Execute += MyAction1_Execute;
             
         }
 
-        //private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
+        private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
 
-        //}
+        }
 
         protected override void OnActivated() {
             base.OnActivated();

@@ -14,18 +14,19 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Win.SystemModule;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.XtraEditors;
+using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.Win.Controllers {
     public class CustomWinController : ViewController {
         public CustomWinController() {
-            // var myAction1 = new SimpleAction(this, "MyAction1", null);
-            //  myAction1.Execute += MyAction1_Execute;
+             var myAction1 = new SimpleAction(this, "MyAction1", null);
+              myAction1.Execute += MyAction1_Execute;
             
         }
 
-        //private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
+        private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
 
-        //}
+        }
 
         protected override void OnActivated() {
             base.OnActivated();
