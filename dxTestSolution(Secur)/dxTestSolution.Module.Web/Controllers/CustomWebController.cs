@@ -16,7 +16,7 @@ using DevExpress.ExpressApp.SystemModule;
 namespace dxTestSolution.Module.Web.Controllers {
     public class CustomWebController : ViewController {
         public CustomWebController() {
-             var myAction1 = new SimpleAction(this, "MyAction1", null);
+             var myAction1 = new SimpleAction(this, "MyWebAction1", null);
               myAction1.Execute += MyAction1_Execute;
             
         }

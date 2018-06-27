@@ -19,7 +19,7 @@ using DevExpress.ExpressApp.SystemModule;
 namespace dxTestSolution.Module.Win.Controllers {
     public class CustomWinController : ViewController {
         public CustomWinController() {
-             var myAction1 = new SimpleAction(this, "MyAction1", null);
+             var myAction1 = new SimpleAction(this, "MyWinAction1", null);
               myAction1.Execute += MyAction1_Execute;
             
         }
