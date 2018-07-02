@@ -12,6 +12,8 @@ using DevExpress.Web;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Web.Controls;
+using System.Web.UI;
 
 namespace dxTestSolution.Module.Web.Controllers {
     public class CustomWebController : ViewController {
