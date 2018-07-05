@@ -15,7 +15,6 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using dxTestSolution.Module.BusinessObjects;
 using DevExpress.ExpressApp.SystemModule;
-using System.Collections;
 
 namespace dxTestSolution.Module.Controllers {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
