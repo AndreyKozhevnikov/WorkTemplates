@@ -21,7 +21,7 @@ namespace dxTestSolution.Module {
     public sealed partial class dxTestSolutionModule : ModuleBase {
 		public static bool UseInMemoryStore;
         public dxTestSolutionModule() {
-			UseInMemoryStore = true;
+			//UseInMemoryStore = true;
             InitializeComponent();
 			BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
