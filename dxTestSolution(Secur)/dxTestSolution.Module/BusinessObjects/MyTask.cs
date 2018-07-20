@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp.Editors;
 
 namespace dxTestSolution.Module.BusinessObjects {
     [DefaultClassOptions]

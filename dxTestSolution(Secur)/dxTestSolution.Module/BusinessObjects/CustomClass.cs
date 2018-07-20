@@ -9,6 +9,7 @@ using DevExpress.Xpo;
 using DevExpress.ExpressApp.DC;
 using System.ComponentModel;
 using System.Runtime.Serialization;
+using DevExpress.ExpressApp.Editors;
 namespace dxTestSolution.Module.BusinessObjects {
   
 }
