@@ -15,6 +15,7 @@ using DevExpress.ExpressApp.Win.SystemModule;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.XtraEditors;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Model;
 
 namespace dxTestSolution.Module.Win.Controllers {
     public class CustomWinController : ViewController {
