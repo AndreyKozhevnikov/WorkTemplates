@@ -15,7 +15,7 @@ using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Web.Editors;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.ExpressApp.Model;
-
+using DevExpress.ExpressApp.Web.SystemModule;
 
 namespace dxTestSolution.Module.Web.Controllers {
     public class CustomWebController : ViewController {

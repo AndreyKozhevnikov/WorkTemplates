@@ -10,6 +10,10 @@ using DevExpress.ExpressApp.DC;
 using System.ComponentModel;
 using System.Runtime.Serialization;
 using DevExpress.ExpressApp.Editors;
+using DevExpress.ExpressApp;
+using DevExpress.Data.Filtering;
+using DevExpress.ExpressApp.Xpo;
+
 namespace dxTestSolution.Module.BusinessObjects {
   
 }
