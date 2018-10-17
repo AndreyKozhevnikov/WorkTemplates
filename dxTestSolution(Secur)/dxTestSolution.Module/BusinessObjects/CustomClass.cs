@@ -13,7 +13,7 @@ using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Xpo;
-
+using DevExpress.ExpressApp.Model;
 namespace dxTestSolution.Module.BusinessObjects {
   
 }

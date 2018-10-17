@@ -15,8 +15,11 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using dxTestSolution.Module.BusinessObjects;
 using DevExpress.ExpressApp.SystemModule;
+using System.IO;
+using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
+	//public class CustomController : ObjectViewController<ListView,Contact> {
     public class CustomController : ViewController {
         public CustomController() {
            // var myAction1 = new SimpleAction(this, "MyAction1", null);

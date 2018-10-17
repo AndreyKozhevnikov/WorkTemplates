@@ -16,8 +16,11 @@ using DevExpress.ExpressApp.Web.Editors;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Web.SystemModule;
-
+using DevExpress.Persistent.Base;
+using System.IO;
+using System.ComponentModel;
 namespace dxTestSolution.Module.Web.Controllers {
+	//public class CustomWebController : ObjectViewController<ListView,Contact> {
     public class CustomWebController : ViewController {
         public CustomWebController() {
              var myAction1 = new SimpleAction(this, "MyWebAction1", null);

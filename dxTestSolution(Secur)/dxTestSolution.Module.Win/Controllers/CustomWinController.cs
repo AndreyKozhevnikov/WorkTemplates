@@ -16,8 +16,12 @@ using DevExpress.ExpressApp.Editors;
 using DevExpress.XtraEditors;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Model;
+using DevExpress.Persistent.Base;
+using System.IO;
+using System.ComponentModel;
 
 namespace dxTestSolution.Module.Win.Controllers {
+	//public class CustomWinController : ObjectViewController<ListView,Contact> {
     public class CustomWinController : ViewController {
         public CustomWinController() {
              var myAction1 = new SimpleAction(this, "MyWinAction1", null);
