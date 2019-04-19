@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using dxTestSolution.Module.BusinessObjects;
+using DevExpress.Xpo.DB;
 
 namespace ConsoleApp1.dxTestSolution {
     public static class ConnectionHelper {
@@ -35,6 +36,7 @@ namespace ConsoleApp1.dxTestSolution {
             } else {
                 XpoDefault.DataLayer = XpoDefault.GetDataLayer(ConnectionString, autoCreateOption);
             }
+			 XpoDefault.DataLayer =  new SimpleDataLayer(new InMemoryDataStore());
             XpoDefault.Session = null;
         }
         public static DevExpress.Xpo.DB.IDataStore GetConnectionProvider(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption) {

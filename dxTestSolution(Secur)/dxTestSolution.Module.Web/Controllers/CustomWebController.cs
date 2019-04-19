@@ -19,7 +19,13 @@ using DevExpress.ExpressApp.Web.SystemModule;
 using DevExpress.Persistent.Base;
 using System.IO;
 using System.ComponentModel;
+using DevExpress.ExpressApp.Web.Utils;
+using DevExpress.ExpressApp.Web.Templates.ActionContainers;
+using System.Collections;
 namespace dxTestSolution.Module.Web.Controllers {
+	
+	
+	
 	//public class CustomWebController : ObjectViewController<ListView,Contact> {
     public class CustomWebController : ViewController {
         public CustomWebController() {

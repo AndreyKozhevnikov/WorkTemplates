@@ -14,7 +14,7 @@ using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Editors;
 
 namespace dxTestSolution.Module.BusinessObjects {
-    [DefaultClassOptions]
+     [DefaultClassOptions]
     public class Contact : BaseObject { 
         public Contact(Session session)
             : base(session) {
@@ -28,7 +28,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return firstName;
             }
             set {
-                SetPropertyValue("FirstName", ref firstName, value);
+                SetPropertyValue(nameof(FirstName), ref firstName, value);
             }
         }
         string lastName;
@@ -37,7 +37,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return lastName;
             }
             set {
-                SetPropertyValue("LastName", ref lastName, value);
+                SetPropertyValue(nameof(LastName), ref lastName, value);
             }
         }
 		int age;
@@ -46,13 +46,24 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return age;
             }
             set {
-                SetPropertyValue("Age", ref age, value);
+                SetPropertyValue(nameof(Age), ref age, value);
             }
         }
+        // DateTime _birthDate;
+        // public DateTime BirthDate {
+        // get {
+        // return _birthDate;
+        // }
+        // set {
+        // SetPropertyValue(nameof(BirthDate), ref _birthDate, value);
+        // }
+        // }	
+        //[EditorAlias(EditorAliases.RichTextPropertyEditor)]
+        //public byte[] Text { get; set; }		
         [Association("Contact-Tasks")]
         public XPCollection<MyTask> Tasks {
             get {
-                return GetCollection<MyTask>("Tasks");
+                return GetCollection<MyTask>(nameof(Tasks));
             }
         }
     }

@@ -14,7 +14,7 @@ using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Editors;
 
 namespace dxTestSolution.Module.BusinessObjects {
-    [DefaultClassOptions]
+     [DefaultClassOptions]
     public class MyTask : BaseObject {
         public MyTask(Session session)
             : base(session) {
@@ -28,7 +28,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return subject;
             }
             set {
-                SetPropertyValue("Subject", ref subject, value);
+                SetPropertyValue(nameof(Subject), ref subject, value);
             }
         }
         Contact assignedTo;
@@ -38,7 +38,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return assignedTo;
             }
             set {
-                SetPropertyValue("AssignedTo", ref assignedTo, value);
+                SetPropertyValue(nameof(AssignedTo), ref assignedTo, value);
             }
         }
         bool isActive;
@@ -47,7 +47,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return isActive;
             }
             set {
-                SetPropertyValue("IsActive", ref isActive, value);
+                SetPropertyValue(nameof(IsActive), ref isActive, value);
             }
         }
         Priority priority;
@@ -56,7 +56,7 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return priority;
             }
             set {
-                SetPropertyValue("Priority", ref priority, value);
+                SetPropertyValue(nameof(Priority), ref priority, value);
             }
         }
     }
