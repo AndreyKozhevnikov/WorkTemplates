@@ -58,8 +58,7 @@ namespace dxTestSolution.Module.BusinessObjects {
         // SetPropertyValue(nameof(BirthDate), ref _birthDate, value);
         // }
         // }	
-        //[EditorAlias(EditorAliases.RichTextPropertyEditor)]
-        //public byte[] Text { get; set; }		
+        //office#3		
         [Association("Contact-Tasks")]
         public XPCollection<MyTask> Tasks {
             get {

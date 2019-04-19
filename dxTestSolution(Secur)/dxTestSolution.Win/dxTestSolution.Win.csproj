@@ -64,6 +64,7 @@
     </Reference>
 	    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
      <!--//report#4-->
+	 <!--//office#8-->
     <Reference Include="DevExpress.ExpressApp.Security.Xpo.v18.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

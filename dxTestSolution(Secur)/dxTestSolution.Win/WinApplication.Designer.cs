@@ -29,9 +29,11 @@
             this.module4 = new dxTestSolution.Module.Win.dxTestSolutionWindowsFormsModule();
 			//secur#2
 			//report#0
+			//office#4
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
 			//secur#3
 			//report#1#
+			//office#5
             // 
             // dxTestSolutionWindowsFormsApplication
             // 
@@ -40,6 +42,7 @@
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);
 			//report#2
+			//office#6
             this.Modules.Add(this.module3);
             this.Modules.Add(this.module4);
 			//secur#4
@@ -59,5 +62,6 @@
         private dxTestSolution.Module.Win.dxTestSolutionWindowsFormsModule module4;
 		//secur#1
 		//report#3
+		//office#7
     }
 }

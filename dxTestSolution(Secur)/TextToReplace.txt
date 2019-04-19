@@ -4,7 +4,10 @@
 <File>\{0}.Module\DatabaseUpdate\Updater.cs</File>
 <File>\{0}.Module\Module.cs</File>
 <File>\{0}.Module\Module.Designer.cs</File>
+<File>\{0}.Module\BusinessObjects\Contact.cs</File>
 <File>\{0}.Module\{0}.Module.csproj</File>
+<File>\{0}.Module.Win\WinModule.Designer.cs</File>
+<File>\{0}.Module.Win\{0}.Module.Win.csproj</File>
 <File>\{0}.Win\WinApplication.Designer.cs</File>
 <File>\{0}.Win\WinApplication.cs</File>
 <File>\{0}.Win\{0}.Win.csproj</File>
@@ -200,6 +203,39 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
 
  </Item>
  <Item marker="//UseInMemoryStore = true;" token="inmemory">UseInMemoryStore = true;</Item>
+ 
+  <Item marker="//office#1" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
+  <Item marker="&lt;!--//office#2--&gt;" token="office">
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.Utils.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraEditors.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraRichEdit.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+	&lt;Reference Include=&quot;System.Windows.Forms&quot; /&gt;
+
+</Item>
+ <Item marker="//office#3" token="office">
+         [EditorAlias(EditorAliases.RichTextPropertyEditor)]
+        public byte[] Text { get; set; }
+ </Item>
+ <Item marker="//office#4" token="office">
+   this.officeWindowsFormsModule1 = new DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule();
+ </Item>
+<Item marker="//office#5" token="office">
+  this.officeWindowsFormsModule1.RichTextMailMergeDataType = typeof(DevExpress.Persistent.BaseImpl.RichTextMailMergeData);
+ </Item>
+<Item marker="//office#6" token="office">
+   this.Modules.Add(this.officeWindowsFormsModule1);
+</Item>
+ <Item marker="//office#7" token="office">
+   private DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule officeWindowsFormsModule1;
+ </Item>
+ <Item marker="&lt;!--//office#8--&gt;" token="office">
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+ </Item>
 </Items>
 </Replace>
 
