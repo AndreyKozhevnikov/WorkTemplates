@@ -202,6 +202,11 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
             this.Modules.Add(this.reportsAspNetModuleV21);
 
  </Item>
+  <Item marker="&lt;!--//report#15--&gt;" token="report">
+     &lt;Compile Include=&quot;Controllers\ClearReportCacheController.cs&quot;&gt;
+      &lt;SubType&gt;Component&lt;/SubType&gt;
+    &lt;/Compile&gt;
+  </Item>
  <Item marker="//UseInMemoryStore = true;" token="inmemory">UseInMemoryStore = true;</Item>
  
   <Item marker="//office#1" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
@@ -236,6 +241,12 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
  <Item marker="&lt;!--//office#8--&gt;" token="office">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
  </Item>
+ <Item marker="&lt;!--//office#9--&gt;" token="office">
+    &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
+      &lt;SubType&gt;Component&lt;/SubType&gt;
+    &lt;/Compile&gt;
+ </Item>
+
 </Items>
 </Replace>
 

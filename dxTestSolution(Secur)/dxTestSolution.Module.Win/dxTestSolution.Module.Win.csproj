@@ -138,6 +138,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+  <!--//office#9-->
    <Compile Include="Controllers\CustomWinController.cs">
       <SubType>Component</SubType>
     </Compile>
