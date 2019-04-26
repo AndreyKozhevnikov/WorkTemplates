@@ -12,9 +12,10 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Editors;
-
+using System.Diagnostics;
 namespace dxTestSolution.Module.BusinessObjects {
      [DefaultClassOptions]
+	  [DebuggerDisplay("FirstName: {FirstName}")]
     public class Contact : BaseObject { 
         public Contact(Session session)
             : base(session) {

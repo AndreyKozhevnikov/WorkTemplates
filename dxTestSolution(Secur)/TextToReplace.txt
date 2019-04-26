@@ -129,30 +129,30 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
 
  </Item>
 <Item marker="&lt;!--//report#4--&gt;" token="report">
-    &lt;Reference Include=&quot;DevExpress.DataAccess.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.DataAccess.v18.2.UI, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Win.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
     
-    &lt;Reference Include=&quot;DevExpress.Utils.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.Utils.v18.2.UI, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
  </Item>
 <Item marker="&lt;!--//report#5--&gt;" token="report">
-      &lt;add name=&quot;ASPxWebDocumentViewerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
-      &lt;add name=&quot;ASPxQueryBuilderDesignerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
+      &lt;add name=&quot;ASPxWebDocumentViewerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
+      &lt;add name=&quot;ASPxQueryBuilderDesignerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
 
  </Item>
 <Item marker="&lt;!--//report#6--&gt;" token="report">
-      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+      &lt;add verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
  </Item>
 <Item marker="&lt;!--//report#7--&gt;" token="report">
-        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2.Web, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2.Web, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+        &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
  </Item>
 <Item marker="//report#8" token="report">
@@ -160,7 +160,7 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
 
  </Item>
 <Item marker="&lt;!--//report#9--&gt;" token="report">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot;&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot;&gt;
       &lt;SpecificVersion&gt;False&lt;/SpecificVersion&gt;
     &lt;/Reference&gt;
     &lt;Reference Include=&quot;DevExpress.Utils.v18.2&quot; /&gt;
@@ -189,11 +189,11 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
 
  </Item>
 <Item marker="&lt;!--//report#13--&gt;" token="report">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Web.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Web, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Web.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Extensions, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraReports.v18.2.Web, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
 
  </Item>
@@ -211,20 +211,28 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
  
   <Item marker="//office#1" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
   <Item marker="&lt;!--//office#2--&gt;" token="office">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.Utils.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraBars.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraEditors.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraGrid.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraPrinting.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraRichEdit.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Win.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.Utils.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraBars.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraEditors.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraGrid.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraPrinting.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.XtraRichEdit.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 	&lt;Reference Include=&quot;System.Windows.Forms&quot; /&gt;
 
 </Item>
  <Item marker="//office#3" token="office">
-         [EditorAlias(EditorAliases.RichTextPropertyEditor)]
-        public byte[] Text { get; set; }
+        byte[] _text;
+        [EditorAlias(EditorAliases.RichTextPropertyEditor)]
+        public byte[] Text {
+            get {
+                return _text;
+            }
+            set {
+                SetPropertyValue(nameof(Text), ref _text, value);
+            }
+        }
  </Item>
  <Item marker="//office#4" token="office">
    this.officeWindowsFormsModule1 = new DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule();
@@ -239,7 +247,7 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
    private DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule officeWindowsFormsModule1;
  </Item>
  <Item marker="&lt;!--//office#8--&gt;" token="office">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v18.2, Version=18.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
  </Item>
  <Item marker="&lt;!--//office#9--&gt;" token="office">
     &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
