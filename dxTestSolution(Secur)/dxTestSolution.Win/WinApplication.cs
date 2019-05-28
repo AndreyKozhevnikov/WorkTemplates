@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Security;
+using DevExpress.ExpressApp.Security;
+using DevExpress.ExpressApp.Security.ClientServer;
 
 namespace dxTestSolution.Win {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWinWinApplicationMembersTopicAll.aspx
@@ -29,11 +31,14 @@ namespace dxTestSolution.Win {
         }
 		//secur#6
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
+            IObjectSpaceProvider provider;
             if(dxTestSolution.Module.dxTestSolutionModule.UseInMemoryStore) {
-                args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(InMemoryDataStoreProvider.ConnectionString, null, false));
+                provider = new XPObjectSpaceProvider(InMemoryDataStoreProvider.ConnectionString, null, false);
             } else {
-                args.ObjectSpaceProviders.Add(new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false));
+                provider = new XPObjectSpaceProvider(XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
             }
+			//secur#9
+            args.ObjectSpaceProviders.Add(provider);
             args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));
         }
         private void dxTestSolutionWindowsFormsApplication_CustomizeLanguagesList(object sender, CustomizeLanguagesListEventArgs e) {

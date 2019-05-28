@@ -108,6 +108,14 @@ this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrat
 <Item marker="//secur#7" token="security">
             WebApplication.Instance.LastLogonParametersRead += MyApplication_LastLogonParametersRead;
 </Item>
+<Item marker="//secur#8" token="security">
+            UseIntegratedSecurity = true;
+</Item>
+<Item marker="//secur#9" token="security">
+            if(dxTestSolution.Module.dxTestSolutionModule.UseIntegratedSecurity) {
+                provider = new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
+            }
+</Item>
 <Item marker="//report#0" token="report">
             this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
             this.reportsWindowsFormsModuleV21 = new DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2();

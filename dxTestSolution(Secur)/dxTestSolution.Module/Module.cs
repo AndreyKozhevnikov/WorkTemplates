@@ -21,8 +21,10 @@ namespace dxTestSolution.Module {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
     public sealed partial class dxTestSolutionModule : ModuleBase {
 		public static bool UseInMemoryStore;
+		public static bool UseIntegratedSecurity;
         public dxTestSolutionModule() {
 			//UseInMemoryStore = true;
+			//secur#8
             InitializeComponent();
 			BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
