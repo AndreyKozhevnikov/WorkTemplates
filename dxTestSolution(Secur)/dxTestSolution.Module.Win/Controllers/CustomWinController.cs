@@ -20,6 +20,8 @@ using DevExpress.Persistent.Base;
 using System.IO;
 using System.ComponentModel;
 using System.Collections;
+using DevExpress.Persistent.BaseImpl;
+using DevExpress.ExpressApp.Xpo;
 namespace dxTestSolution.Module.Win.Controllers {
 	
 	
