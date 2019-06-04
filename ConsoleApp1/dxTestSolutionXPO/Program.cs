@@ -1,6 +1,4 @@
-﻿
-using ConsoleApp1.dxTestSolution;
-using DevExpress.Data.Filtering;
+﻿using DevExpress.Data.Filtering;
 using DevExpress.Xpo;
 using dxTestSolution.Module.BusinessObjects;
 using System;
@@ -9,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dxTestSolution {
+namespace dxTestSolutionXPO {
     class Program {
         static void Main(string[] args) {
             ConnectionHelper.Connect(DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);

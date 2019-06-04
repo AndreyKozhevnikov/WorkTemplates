@@ -70,7 +70,7 @@
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
 </Item>
 <Item marker="//secur#2" token="security">
-this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
+            this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.authenticationStandard1 = new DevExpress.ExpressApp.Security.AuthenticationStandard();
 </Item>

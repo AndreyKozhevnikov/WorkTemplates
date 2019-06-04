@@ -15,7 +15,7 @@ using System.Configuration;
 using dxTestSolution.Module.BusinessObjects;
 using DevExpress.Xpo.DB;
 
-namespace ConsoleApp1.dxTestSolution {
+namespace dxTestSolutionXPO {
     public static class ConnectionHelper {
         static Type[] persistentTypes = new Type[] {
             typeof(Contact),typeof(MyTask)
@@ -26,6 +26,7 @@ namespace ConsoleApp1.dxTestSolution {
             return copy;
         }
         static string ConnectionString;
+        static bool UseInMemoryStore;
         public static void Connect(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption, bool threadSafe = false) {
             ConnectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
             if(threadSafe) {
@@ -36,7 +37,10 @@ namespace ConsoleApp1.dxTestSolution {
             } else {
                 XpoDefault.DataLayer = XpoDefault.GetDataLayer(ConnectionString, autoCreateOption);
             }
-			 XpoDefault.DataLayer =  new SimpleDataLayer(new InMemoryDataStore());
+            //UseInMemoryStore = true;
+            if(UseInMemoryStore) {
+                XpoDefault.DataLayer = new SimpleDataLayer(new InMemoryDataStore());
+            }
             XpoDefault.Session = null;
         }
         public static DevExpress.Xpo.DB.IDataStore GetConnectionProvider(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption) {
