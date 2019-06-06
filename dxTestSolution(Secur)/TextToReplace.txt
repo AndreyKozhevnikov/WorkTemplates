@@ -19,7 +19,7 @@
 <Items>
 <Item marker="//secur#0" token="security">
    
-                   PermissionPolicyRole adminRole = ObjectSpace.FindObject&lt;PermissionPolicyRole&gt;(new BinaryOperator(&quot;Name&quot;, SecurityStrategy.AdministratorRoleName));
+            PermissionPolicyRole adminRole = ObjectSpace.FindObject&lt;PermissionPolicyRole&gt;(new BinaryOperator(&quot;Name&quot;, SecurityStrategy.AdministratorRoleName));
             if(adminRole == null) {
                 adminRole = ObjectSpace.CreateObject&lt;PermissionPolicyRole&gt;();
                 adminRole.Name = SecurityStrategy.AdministratorRoleName;
