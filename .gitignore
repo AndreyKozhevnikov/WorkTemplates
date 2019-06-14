@@ -15,6 +15,7 @@ build/
 [Bb]in/
 [Oo]bj/
 .cr/
+.vs/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
@@ -156,4 +157,4 @@ $RECYCLE.BIN/
 # Mac desktop service store files
 .DS_Store
 /packages
-/.vs/THelper/v15/Server/sqlite3
+

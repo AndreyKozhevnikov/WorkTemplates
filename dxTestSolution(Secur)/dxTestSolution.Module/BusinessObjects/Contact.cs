@@ -13,6 +13,7 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Editors;
 using System.Diagnostics;
+using DevExpress.Persistent.Base.General;
 namespace dxTestSolution.Module.BusinessObjects {
      [DefaultClassOptions]
 	  [DebuggerDisplay("FirstName: {FirstName}")]

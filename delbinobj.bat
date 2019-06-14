@@ -7,4 +7,3 @@ FOR /R %%J IN (*.suo) DO del "%%J"
 
 IF EXIST .vs      rd .vs /s/q
 
-pause
