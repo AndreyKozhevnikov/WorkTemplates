@@ -59,10 +59,10 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.Security.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
+    <Reference Include="DevExpress.ExpressApp.Security.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+	    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
      <!--//report#4-->
 	 <!--//office#8-->
     <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.1">
@@ -93,6 +93,9 @@
     </Reference>
     <Reference Include="DevExpress.Data.v19.1">
       <SpecificVersion>False</SpecificVersion>
+    </Reference>
+	<Reference Include="DevExpress.Images.v19.1" >
+	  <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.v19.1">
       <SpecificVersion>False</SpecificVersion>
