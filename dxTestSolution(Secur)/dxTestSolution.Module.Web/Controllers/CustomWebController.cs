@@ -27,6 +27,7 @@ using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Web.Layout;
 using System.Web.UI;
 using DevExpress.ExpressApp.Web.Controls;
+using DevExpress.ExpressApp.DC;
 
 namespace dxTestSolution.Module.Web.Controllers {
 	

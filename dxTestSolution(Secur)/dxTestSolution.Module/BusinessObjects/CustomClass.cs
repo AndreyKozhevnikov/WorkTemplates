@@ -15,6 +15,8 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base.General;
+using DevExpress.ExpressApp.SystemModule;
+
 namespace dxTestSolution.Module.BusinessObjects {
   
 }

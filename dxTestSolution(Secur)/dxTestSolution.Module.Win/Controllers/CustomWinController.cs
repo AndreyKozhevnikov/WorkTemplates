@@ -22,6 +22,8 @@ using System.ComponentModel;
 using System.Collections;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Xpo;
+using DevExpress.ExpressApp.DC;
+
 namespace dxTestSolution.Module.Win.Controllers {
 	
 	
