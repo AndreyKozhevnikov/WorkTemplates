@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.Security;
-using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
 
 namespace dxTestSolution.Win {

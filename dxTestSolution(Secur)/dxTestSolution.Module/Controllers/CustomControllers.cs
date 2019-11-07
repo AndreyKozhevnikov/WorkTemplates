@@ -14,7 +14,7 @@ using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using dxTestSolution.Module.BusinessObjects;
-using DevExpress.ExpressApp.SystemModule;
+
 using System.IO;
 using System.ComponentModel;
 
