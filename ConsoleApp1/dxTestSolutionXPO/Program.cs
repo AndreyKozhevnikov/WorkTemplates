@@ -1,6 +1,6 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.Xpo;
-using dxTestSolution.Module.BusinessObjects;
+using dxTestSolutionXPO.Module.BusinessObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

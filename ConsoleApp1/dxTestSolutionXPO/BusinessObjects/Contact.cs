@@ -4,7 +4,7 @@ using System.Text;
 using DevExpress.Xpo;
 
 
-namespace dxTestSolution.Module.BusinessObjects {
+namespace dxTestSolutionXPO.Module.BusinessObjects {
 
     public class Contact : XPObject { 
         public Contact(Session session)

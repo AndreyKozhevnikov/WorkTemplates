@@ -4,7 +4,7 @@ using System.Text;
 using DevExpress.Xpo;
 
 
-namespace dxTestSolution.Module.BusinessObjects {
+namespace dxTestSolutionXPO.Module.BusinessObjects {
     public class MyTask : XPObject { 
         public MyTask(Session session)
             : base(session) {

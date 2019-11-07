@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{76358B58-BE9D-4EDB-A49D-2B69F848C584}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>dxTestSolution</RootNamespace>
-    <AssemblyName>dxTestSolution</AssemblyName>
+    <RootNamespace>dxTestSolutionXPO</RootNamespace>
+    <AssemblyName>dxTestSolutionXPO</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

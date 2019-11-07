@@ -12,7 +12,7 @@ using DevExpress.Data.Filtering;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
-using dxTestSolution.Module.BusinessObjects;
+using dxTestSolutionXPO.Module.BusinessObjects;
 using DevExpress.Xpo.DB;
 
 namespace dxTestSolutionXPO {
