@@ -15,6 +15,7 @@ namespace dxTestSolution.Web {
         private dxTestSolution.Module.dxTestSolutionModule module3;
 		//secur#1
 		//report#10
+		//office#15#
         private dxTestSolution.Module.Web.dxTestSolutionAspNetModule module4;
 
         #region Default XAF configuration options (https://www.devexpress.com/kb=T501418)
@@ -91,9 +92,12 @@ namespace dxTestSolution.Web {
             this.module4 = new dxTestSolution.Module.Web.dxTestSolutionAspNetModule();
 			//secur#2
 			//report#11
+	        //office#12#
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+			//office#14#
 			//secur#3
 			//report#12
+			
             // 
             // dxTestSolutionAspNetApplication
             // 
@@ -103,6 +107,7 @@ namespace dxTestSolution.Web {
             this.Modules.Add(this.module2);
 			//report#14
             this.Modules.Add(this.module3);
+			//office#13#
             this.Modules.Add(this.module4);
 			//secur#4
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.dxTestSolutionAspNetApplication_DatabaseVersionMismatch);

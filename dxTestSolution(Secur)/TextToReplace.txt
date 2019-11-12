@@ -7,7 +7,9 @@
 <File>\{0}.Module\BusinessObjects\Contact.cs</File>
 <File>\{0}.Module\{0}.Module.csproj</File>
 <File>\{0}.Module.Win\WinModule.Designer.cs</File>
+<File>\{0}.Module.Web\WebModule.Designer.cs</File>
 <File>\{0}.Module.Win\{0}.Module.Win.csproj</File>
+<File>\{0}.Module.Web\{0}.Module.Web.csproj</File>
 <File>\{0}.Win\WinApplication.Designer.cs</File>
 <File>\{0}.Win\WinApplication.cs</File>
 <File>\{0}.Win\{0}.Win.csproj</File>
@@ -217,7 +219,8 @@
   </Item>
  <Item marker="//UseInMemoryStore = true;" token="inmemory">UseInMemoryStore = true;</Item>
  
-  <Item marker="//office#1" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
+  <Item marker="//office#1#" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
+  <Item marker="//office#10#" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Web.OfficeAspNetModule));</Item>
   <Item marker="&lt;!--//office#2--&gt;" token="office">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
 	&lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
@@ -244,18 +247,20 @@
         }
  </Item>
  <Item marker="//office#4" token="office">
+  this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
    this.officeWindowsFormsModule1 = new DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule();
  </Item>
-<Item marker="//office#5" token="office">
-  this.officeWindowsFormsModule1.RichTextMailMergeDataType = typeof(DevExpress.Persistent.BaseImpl.RichTextMailMergeData);
- </Item>
+
 <Item marker="//office#6" token="office">
+ this.Modules.Add(this.officeModule1);
    this.Modules.Add(this.officeWindowsFormsModule1);
-</Item>
+  </Item>
  <Item marker="//office#7" token="office">
    private DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule officeWindowsFormsModule1;
+           private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
  </Item>
  <Item marker="&lt;!--//office#8--&gt;" token="office">
+ &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
  </Item>
  <Item marker="&lt;!--//office#9--&gt;" token="office">
@@ -263,7 +268,27 @@
       &lt;SubType&gt;Component&lt;/SubType&gt;
     &lt;/Compile&gt;
  </Item>
+  <Item marker="&lt;!--//office#11#--&gt;" token="office">
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Web.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+	&lt;Reference Include=&quot;DevExpress.Web.ASPxRichEdit.v19.1, Version=19.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
+ </Item>
+<Item marker="//office#12#" token="office">
+    this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
+    this.officeAspNetModule1 = new DevExpress.ExpressApp.Office.Web.OfficeAspNetModule();
+</Item>
+<Item marker="//office#13#" token="office">
+         this.Modules.Add(this.officeModule1);
+         this.Modules.Add(this.officeAspNetModule1);
+</Item>
+<Item marker="//office#14#" token="office">
+     this.officeModule1.RichTextMailMergeDataType = typeof(DevExpress.Persistent.BaseImpl.RichTextMailMergeData);
+</Item>
+<Item marker="//office#15#" token="office">
+      private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
+        private DevExpress.ExpressApp.Office.Web.OfficeAspNetModule officeAspNetModule1;
 
+</Item>
 </Items>
 </Replace>
 
