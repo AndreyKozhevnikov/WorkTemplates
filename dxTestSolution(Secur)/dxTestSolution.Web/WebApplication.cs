@@ -37,6 +37,9 @@ namespace dxTestSolution.Web {
             InitializeComponent();
 			InitializeDefaults();
         }
+		protected override IViewUrlManager CreateViewUrlManager() {
+            return new ViewUrlManager();
+        }
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             IObjectSpaceProvider provider;
             if(dxTestSolution.Module.dxTestSolutionModule.UseInMemoryStore) {
