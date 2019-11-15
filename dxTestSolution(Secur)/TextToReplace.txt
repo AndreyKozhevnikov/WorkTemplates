@@ -8,6 +8,8 @@
 <File>\{0}.Module\{0}.Module.csproj</File>
 <File>\{0}.Module.Win\WinModule.Designer.cs</File>
 <File>\{0}.Module.Web\WebModule.Designer.cs</File>
+<File>\{0}.Module.Win\WinModule.cs</File>
+<File>\{0}.Module.Web\WebModule.cs</File>
 <File>\{0}.Module.Win\{0}.Module.Win.csproj</File>
 <File>\{0}.Module.Web\{0}.Module.Web.csproj</File>
 <File>\{0}.Win\WinApplication.Designer.cs</File>
@@ -66,7 +68,7 @@
             user1.Roles.Add(adminRole);
             user2.Roles.Add(userRole);
 </Item>
-<Item marker="//secur#1" token="security">
+<Item marker="//secur#1#" token="security">
         private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
         private DevExpress.ExpressApp.Security.AuthenticationStandard authenticationStandard1;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
@@ -118,6 +120,31 @@
                 provider = new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
             }
 </Item>
+<Item marker="//secur#10#" token="security">
+            //application.CreateCustomModelDifferenceStore += Application_CreateCustomModelDifferenceStore;
+            application.CreateCustomUserModelDifferenceStore += Application_CreateCustomUserModelDifferenceStore;
+</Item>
+<Item marker="//secur#11#" token="security">
+        //private void Application_CreateCustomModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
+        //    e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), true, "Win");
+        //    e.Handled = true;
+        //}
+        private void Application_CreateCustomUserModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
+            e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), false, "Win");
+            e.Handled = true;
+        }
+</Item>
+<Item marker="//secur#12#" token="security">
+      //private void Application_CreateCustomModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
+        //    e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), true, "Web");
+        //    e.Handled = true;
+        //}
+        private void Application_CreateCustomUserModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
+            e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), false, "Web");
+            e.Handled = true;
+        }
+</Item>
+
 <Item marker="//report#0" token="report">
             this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
             this.reportsWindowsFormsModuleV21 = new DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2();

@@ -12,6 +12,7 @@ using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
+using DevExpress.Persistent.BaseImpl;
 
 namespace dxTestSolution.Module.Web {
     [ToolboxItemFilter("Xaf.Platform.Web")]
@@ -25,7 +26,9 @@ namespace dxTestSolution.Module.Web {
         }
         public override void Setup(XafApplication application) {
             base.Setup(application);
+			//secur#10#
             // Manage various aspects of the application UI and behavior at the module level.
         }
+		//secur#12#
     }
 }

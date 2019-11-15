@@ -13,7 +13,7 @@ namespace dxTestSolution.Web {
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule module2;
         private dxTestSolution.Module.dxTestSolutionModule module3;
-		//secur#1
+		//secur#1#
 		//report#10
 		//office#15#
         private dxTestSolution.Module.Web.dxTestSolutionAspNetModule module4;

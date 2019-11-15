@@ -60,7 +60,7 @@
         private DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule module2;
         private dxTestSolution.Module.dxTestSolutionModule module3;
         private dxTestSolution.Module.Win.dxTestSolutionWindowsFormsModule module4;
-		//secur#1
+		//secur#1#
 		//report#3
 		//office#7
     }
