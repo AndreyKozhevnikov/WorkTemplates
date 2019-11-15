@@ -16,6 +16,7 @@ namespace dxTestSolution.Web {
             InitializeComponent();
         }
         protected void Application_Start(Object sender, EventArgs e) {
+			RouteTable.Routes.RegisterXafRoutes();
             ASPxWebControl.CallbackError += new EventHandler(Application_Error);
 #if EASYTEST
             DevExpress.ExpressApp.Web.TestScripts.TestScriptsManager.EasyTestEnabled = true;
