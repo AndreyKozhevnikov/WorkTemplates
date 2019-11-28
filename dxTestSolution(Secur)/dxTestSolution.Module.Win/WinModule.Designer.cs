@@ -29,6 +29,7 @@
             this.RequiredModuleTypes.Add(typeof(dxTestSolution.Module.dxTestSolutionModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule));
 			//office#1#
+			//report#17#
         }
 
         #endregion

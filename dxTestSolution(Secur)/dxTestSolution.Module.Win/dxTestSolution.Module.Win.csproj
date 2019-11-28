@@ -58,6 +58,12 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.2" >
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v19.2" >
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   <!--//office#2-->
     <Reference Include="DevExpress.Utils.v19.2">
       <SpecificVersion>False</SpecificVersion>

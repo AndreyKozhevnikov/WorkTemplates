@@ -23,7 +23,7 @@ using System.Collections;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.ExpressApp.DC;
-
+using DevExpress.ExpressApp.Win;
 namespace dxTestSolution.Module.Win.Controllers {
 	
 	

@@ -29,6 +29,7 @@
             this.RequiredModuleTypes.Add(typeof(dxTestSolution.Module.dxTestSolutionModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule));
 			//office#10#
+			//report#16#
         }
 
         #endregion

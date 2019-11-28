@@ -35,7 +35,7 @@ namespace dxTestSolution.Module {
             
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.SystemModule.SystemModule));
 			//report#8
-			
+			//office#16#
 		}
 
 		#endregion
