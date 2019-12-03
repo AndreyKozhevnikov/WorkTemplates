@@ -39,7 +39,12 @@ namespace dxTestSolution.Module.Win.Controllers {
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
 
         }
-
+        //private void MyAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
+        //    var os = Application.CreateObjectSpace(typeof(Contact));
+        //    var obj = os.CreateObject<Contact>();
+        //    var view = Application.CreateDetailView(os, obj);
+        //    e.View = view;
+        //}
         protected override void OnActivated() {
             base.OnActivated();
         }

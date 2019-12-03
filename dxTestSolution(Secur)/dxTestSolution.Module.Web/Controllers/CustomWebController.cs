@@ -40,7 +40,12 @@ namespace dxTestSolution.Module.Web.Controllers {
               myAction1.Execute += MyAction1_Execute;
             
         }
-
+        //private void MyAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
+        //    var os = Application.CreateObjectSpace(typeof(Contact));
+        //    var obj = os.CreateObject<Contact>();
+        //    var view = Application.CreateDetailView(os, obj);
+        //    e.View = view;
+        //}
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
 
         }
