@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Replace>
-<Files>
-<File>\{0}.Module\DatabaseUpdate\Updater.cs</File>
-<File>\{0}.Module\Module.cs</File>
-<File>\{0}.Module\Module.Designer.cs</File>
-<File>\{0}.Module\BusinessObjects\Contact.cs</File>
-<File>\{0}.Module\{0}.Module.csproj</File>
-<File>\{0}.Module.Win\WinModule.Designer.cs</File>
-<File>\{0}.Module.Web\WebModule.Designer.cs</File>
-<File>\{0}.Module.Win\WinModule.cs</File>
-<File>\{0}.Module.Web\WebModule.cs</File>
-<File>\{0}.Module.Win\{0}.Module.Win.csproj</File>
-<File>\{0}.Module.Web\{0}.Module.Web.csproj</File>
-<File>\{0}.Win\WinApplication.Designer.cs</File>
-<File>\{0}.Win\WinApplication.cs</File>
-<File>\{0}.Win\{0}.Win.csproj</File>
-<File>\{0}.Web\{0}.Web.csproj</File>
-<File>\{0}.Web\Global.asax.cs</File>
-<File>\{0}.Web\WebApplication.cs</File>
-<File>\{0}.Web\Web.config</File>
-</Files>
-<Items>
-<Item marker="//secur#0" token="security">
-   
+	<Files>
+		<File>\{0}.Module\DatabaseUpdate\Updater.cs</File>
+		<File>\{0}.Module\Module.cs</File>
+		<File>\{0}.Module\Module.Designer.cs</File>
+		<File>\{0}.Module\BusinessObjects\Contact.cs</File>
+		<File>\{0}.Module\{0}.Module.csproj</File>
+		<File>\{0}.Module.Win\WinModule.Designer.cs</File>
+		<File>\{0}.Module.Web\WebModule.Designer.cs</File>
+		<File>\{0}.Module.Win\WinModule.cs</File>
+		<File>\{0}.Module.Web\WebModule.cs</File>
+		<File>\{0}.Module.Win\{0}.Module.Win.csproj</File>
+		<File>\{0}.Module.Web\{0}.Module.Web.csproj</File>
+		<File>\{0}.Win\WinApplication.Designer.cs</File>
+		<File>\{0}.Win\WinApplication.cs</File>
+		<File>\{0}.Win\{0}.Win.csproj</File>
+		<File>\{0}.Web\{0}.Web.csproj</File>
+		<File>\{0}.Web\Global.asax.cs</File>
+		<File>\{0}.Web\WebApplication.cs</File>
+		<File>\{0}.Web\Web.config</File>
+	</Files>
+	<Tokens>
+		<Token name="validation">
+
+		</Token>
+		<Token name="security">
+			<Item marker="//secur#0">
+
             PermissionPolicyRole adminRole = ObjectSpace.FindObject&lt;PermissionPolicyRole&gt;(new BinaryOperator(&quot;Name&quot;, SecurityStrategy.AdministratorRoleName));
             if(adminRole == null) {
                 adminRole = ObjectSpace.CreateObject&lt;PermissionPolicyRole&gt;();
@@ -46,7 +50,7 @@
             userRole.AddTypePermissionsRecursively&lt;PermissionPolicyRole&gt;(SecurityOperations.Read, SecurityPermissionState.Allow);
             userRole.AddTypePermissionsRecursively&lt;AuditDataItemPersistent&gt;(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
             // ... 
-           
+
             PermissionPolicyUser user1 = ObjectSpace.FindObject&lt;PermissionPolicyUser&gt;(
               new BinaryOperator(&quot;UserName&quot;, &quot;Admin&quot;));
             if(user1 == null) {
@@ -55,7 +59,7 @@
                 // Set a password if the standard authentication type is used. 
                 user1.SetPassword(&quot;&quot;);
             }
-            
+
             PermissionPolicyUser user2 = ObjectSpace.FindObject&lt;PermissionPolicyUser&gt;(
                  new BinaryOperator(&quot;UserName&quot;, &quot;User&quot;));
             if(user2 == null) {
@@ -67,18 +71,18 @@
 
             user1.Roles.Add(adminRole);
             user2.Roles.Add(userRole);
-</Item>
-<Item marker="//secur#1#" token="security">
+			</Item>
+			<Item marker="//secur#1#">
         private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
         private DevExpress.ExpressApp.Security.AuthenticationStandard authenticationStandard1;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
-</Item>
-<Item marker="//secur#2" token="security">
+			</Item>
+			<Item marker="//secur#2">
             this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.authenticationStandard1 = new DevExpress.ExpressApp.Security.AuthenticationStandard();
-</Item>
-<Item marker="//secur#3" token="security">
+			</Item>
+			<Item marker="//secur#3">
              // 
             // securityStrategyComplex1
             // 
@@ -91,15 +95,15 @@
             //
             this.authenticationStandard1.LogonParametersType = typeof(DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters);
             // 
-</Item>
-<Item marker="//secur#4" token="security">
+			</Item>
+			<Item marker="//secur#4">
               this.Modules.Add(this.securityModule1);
             this.Security = this.securityStrategyComplex1;
-</Item>
-<Item marker="//secur#5" token="security">
+			</Item>
+			<Item marker="//secur#5">
             this.LastLogonParametersRead += MyApplication_LastLogonParametersRead;
-</Item>
-<Item marker="//secur#6" token="security">
+			</Item>
+			<Item marker="//secur#6">
             private void MyApplication_LastLogonParametersRead(object sender, LastLogonParametersReadEventArgs e) {
               AuthenticationStandardLogonParameters logonParameters = e.LogonObject as AuthenticationStandardLogonParameters;
               if(logonParameters != null) {
@@ -108,23 +112,23 @@
                 }
               }
             }
-</Item>
-<Item marker="//secur#7" token="security">
+			</Item>
+			<Item marker="//secur#7">
             WebApplication.Instance.LastLogonParametersRead += MyApplication_LastLogonParametersRead;
-</Item>
-<Item marker="//secur#8" token="security">
+			</Item>
+			<Item marker="//secur#8">
             UseIntegratedSecurity = true;
-</Item>
-<Item marker="//secur#9" token="security">
+			</Item>
+			<Item marker="//secur#9">
             if(dxTestSolution.Module.dxTestSolutionModule.UseIntegratedSecurity) {
                 provider = new SecuredObjectSpaceProvider((SecurityStrategyComplex)Security, XPObjectSpaceProvider.GetDataStoreProvider(args.ConnectionString, args.Connection, true), false);
             }
-</Item>
-<Item marker="//secur#10#" token="security">
+			</Item>
+			<Item marker="//secur#10#">
             //application.CreateCustomModelDifferenceStore += Application_CreateCustomModelDifferenceStore;
             application.CreateCustomUserModelDifferenceStore += Application_CreateCustomUserModelDifferenceStore;
-</Item>
-<Item marker="//secur#11#" token="security">
+			</Item>
+			<Item marker="//secur#11#">
         //private void Application_CreateCustomModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
         //    e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), true, "Win");
         //    e.Handled = true;
@@ -133,8 +137,8 @@
             e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), false, "Win");
             e.Handled = true;
         }
-</Item>
-<Item marker="//secur#12#" token="security">
+			</Item>
+			<Item marker="//secur#12#">
       //private void Application_CreateCustomModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
         //    e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), true, "Web");
         //    e.Handled = true;
@@ -143,61 +147,63 @@
             e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), false, "Web");
             e.Handled = true;
         }
-</Item>
+			</Item>
+		</Token>
+		<Token name="report">
 
-<Item marker="//report#0" token="report">
+			<Item marker="//report#0">
             this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
             this.reportsWindowsFormsModuleV21 = new DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2();
-</Item>
-<Item marker="//report#1#" token="report">
+			</Item>
+			<Item marker="//report#1#">
             // 
             // reportsModuleV21
             // 
             this.reportsModuleV21.EnableInplaceReports = true;
             this.reportsModuleV21.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
 			this.reportsModuleV21.ReportStoreMode = DevExpress.ExpressApp.ReportsV2.ReportStoreModes.XML;
-</Item>
-<Item marker="//report#2" token="report">
+			</Item>
+			<Item marker="//report#2">
             this.Modules.Add(this.reportsModuleV21);
             this.Modules.Add(this.reportsWindowsFormsModuleV21);
- </Item>
-<Item marker="//report#3" token="report">
+			</Item>
+			<Item marker="//report#3">
         private DevExpress.ExpressApp.ReportsV2.ReportsModuleV2 reportsModuleV21;
         private DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2 reportsWindowsFormsModuleV21;
 
- </Item>
-<Item marker="&lt;!--//report#4--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#4--&gt;">
     &lt;Reference Include=&quot;DevExpress.DataAccess.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-    
+
     &lt;Reference Include=&quot;DevExpress.Utils.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2.Extensions, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
- </Item>
-<Item marker="&lt;!--//report#5--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#5--&gt;">
       &lt;add name=&quot;ASPxWebDocumentViewerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
       &lt;add name=&quot;ASPxQueryBuilderDesignerHandlerModule&quot; verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; preCondition=&quot;integratedMode&quot; /&gt;
 
- </Item>
-<Item marker="&lt;!--//report#6--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#6--&gt;">
       &lt;add verb=&quot;GET,POST&quot; path=&quot;DXXRDV.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
       &lt;add verb=&quot;GET,POST&quot; path=&quot;DXQB.axd&quot; type=&quot;DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
- </Item>
-<Item marker="&lt;!--//report#7--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#7--&gt;">
         &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
         &lt;add assembly=&quot;DevExpress.XtraReports.v19.2.Web, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
         &lt;add assembly=&quot;DevExpress.XtraReports.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
         &lt;add assembly=&quot;DevExpress.XtraReports.v19.2.Extensions, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
         &lt;add assembly=&quot;DevExpress.ExpressApp.ReportsV2.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
- </Item>
-<Item marker="//report#8" token="report">
+			</Item>
+			<Item marker="//report#8">
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.ReportsModuleV2));
 
- </Item>
-<Item marker="&lt;!--//report#9--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#9--&gt;">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot;&gt;
       &lt;SpecificVersion&gt;False&lt;/SpecificVersion&gt;
     &lt;/Reference&gt;
@@ -205,18 +211,18 @@
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2.Extensions&quot; /&gt;
 
- </Item>
-<Item marker="//report#10" token="report">
+			</Item>
+			<Item marker="//report#10">
         private DevExpress.ExpressApp.ReportsV2.ReportsModuleV2 reportsModuleV21;
         private DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2 reportsAspNetModuleV21;
 
- </Item>
-<Item marker="//report#11" token="report">
+			</Item>
+			<Item marker="//report#11">
             this.reportsModuleV21 = new DevExpress.ExpressApp.ReportsV2.ReportsModuleV2();
             this.reportsAspNetModuleV21 = new DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2();
 
- </Item>
-<Item marker="//report#12" token="report">
+			</Item>
+			<Item marker="//report#12">
               // 
             // reportsModuleV21
             // 
@@ -224,14 +230,14 @@
             this.reportsModuleV21.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
 			this.reportsModuleV21.ReportStoreMode = DevExpress.ExpressApp.ReportsV2.ReportStoreModes.XML;
             // 
-			
+
 			// reportsAspNetModuleV21
             // 
             this.reportsAspNetModuleV21.ReportViewerType = DevExpress.ExpressApp.ReportsV2.Web.ReportViewerTypes.HTML5;
             // 
 
- </Item>
-<Item marker="&lt;!--//report#13--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#13--&gt;">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
@@ -239,24 +245,27 @@
     &lt;Reference Include=&quot;DevExpress.XtraReports.v19.2.Web, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 
 
- </Item>
-<Item marker="//report#14" token="report">
+			</Item>
+			<Item marker="//report#14">
                 this.Modules.Add(this.reportsModuleV21);
             this.Modules.Add(this.reportsAspNetModuleV21);
 
- </Item>
-  <Item marker="&lt;!--//report#15--&gt;" token="report">
+			</Item>
+			<Item marker="&lt;!--//report#15--&gt;">
      &lt;Compile Include=&quot;Controllers\ClearReportCacheController.cs&quot;&gt;
       &lt;SubType&gt;Component&lt;/SubType&gt;
     &lt;/Compile&gt;
-  </Item>
-   <Item marker="//report#16#" token="report">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2));</Item>
-  <Item marker="//report#17#" token="report">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2));</Item>
- <Item marker="//UseInMemoryStore = true;" token="inmemory">UseInMemoryStore = true;</Item>
- 
-  <Item marker="//office#1#" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
-  <Item marker="//office#10#" token="office">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Web.OfficeAspNetModule));</Item>
-  <Item marker="&lt;!--//office#2--&gt;" token="office">
+			</Item>
+			<Item marker="//report#16#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.Web.ReportsAspNetModuleV2));</Item>
+			<Item marker="//report#17#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.Win.ReportsWindowsFormsModuleV2));</Item>
+		</Token>
+		<Token name="inmemory">
+			<Item marker="//UseInMemoryStore = true;">UseInMemoryStore = true;</Item>
+		</Token>
+		<Token name="office">
+			<Item marker="//office#1#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
+			<Item marker="//office#10#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Web.OfficeAspNetModule));</Item>
+			<Item marker="&lt;!--//office#2--&gt;">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
 	&lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
@@ -268,8 +277,8 @@
     &lt;Reference Include=&quot;DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
 	&lt;Reference Include=&quot;System.Windows.Forms&quot; /&gt;
 
-</Item>
- <Item marker="//office#3" token="office">
+			</Item>
+			<Item marker="//office#3">
         byte[] _text;
         [EditorAlias(EditorAliases.RichTextPropertyEditor)]
         public byte[] Text {
@@ -286,55 +295,56 @@
 			get { return data; }
 			set { SetPropertyValue(nameof(Data), ref data, value); }
 		}
- </Item>
- <Item marker="//office#4" token="office">
+			</Item>
+			<Item marker="//office#4">
   this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
    this.officeWindowsFormsModule1 = new DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule();
- </Item>
+			</Item>
 
-<Item marker="//office#6" token="office">
+			<Item marker="//office#6">
  this.Modules.Add(this.officeModule1);
    this.Modules.Add(this.officeWindowsFormsModule1);
-  </Item>
- <Item marker="//office#7" token="office">
+			</Item>
+			<Item marker="//office#7">
    private DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule officeWindowsFormsModule1;
            private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
- </Item>
- <Item marker="&lt;!--//office#8--&gt;" token="office">
+			</Item>
+			<Item marker="&lt;!--//office#8--&gt;">
  &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
- </Item>
- <Item marker="&lt;!--//office#9--&gt;" token="office">
+			</Item>
+			<Item marker="&lt;!--//office#9--&gt;">
     &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
       &lt;SubType&gt;Component&lt;/SubType&gt;
     &lt;/Compile&gt;
- </Item>
-  <Item marker="&lt;!--//office#11#--&gt;" token="office">
+			</Item>
+			<Item marker="&lt;!--//office#11#--&gt;">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
 	&lt;Reference Include=&quot;DevExpress.Web.ASPxRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
- </Item>
-<Item marker="//office#12#" token="office">
+			</Item>
+			<Item marker="//office#12#">
     this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
     this.officeAspNetModule1 = new DevExpress.ExpressApp.Office.Web.OfficeAspNetModule();
-</Item>
-<Item marker="//office#13#" token="office">
+			</Item>
+			<Item marker="//office#13#">
          this.Modules.Add(this.officeModule1);
          this.Modules.Add(this.officeAspNetModule1);
-</Item>
-<Item marker="//office#14#" token="office">
+			</Item>
+			<Item marker="//office#14#">
      this.officeModule1.RichTextMailMergeDataType = typeof(DevExpress.Persistent.BaseImpl.RichTextMailMergeData);
-</Item>
-<Item marker="//office#15#" token="office">
+			</Item>
+			<Item marker="//office#15#">
       private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
         private DevExpress.ExpressApp.Office.Web.OfficeAspNetModule officeAspNetModule1;
 
-</Item>
-<Item marker="//office#16#" token="office">
+			</Item>
+			<Item marker="//office#16#">
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.OfficeModule));
 
- </Item>
-</Items>
+			</Item>
+		</Token>
+	</Tokens>
 </Replace>
 
 
