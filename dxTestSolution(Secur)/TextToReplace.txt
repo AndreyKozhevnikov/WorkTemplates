@@ -220,7 +220,7 @@
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ReportsV2.ReportsModuleV2));
 
 			</Item>
-			<Item marker="&lt;!--//report#9--&gt;">
+			<Item marker="&lt;!--//report#9#--&gt;">
     &lt;Reference Include=&quot;DevExpress.ExpressApp.ReportsV2.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot;&gt;
       &lt;SpecificVersion&gt;False&lt;/SpecificVersion&gt;
     &lt;/Reference&gt;
@@ -280,20 +280,37 @@
 			<Item marker="//UseInMemoryStore = true;">UseInMemoryStore = true;</Item>
 		</Token>
 		<Token name="office">
-			<Item marker="//office#1#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));</Item>
-			<Item marker="//office#10#">this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Web.OfficeAspNetModule));</Item>
-			<Item marker="&lt;!--//office#2--&gt;">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-	&lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraBars.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraPrinting.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-	&lt;Reference Include=&quot;System.Windows.Forms&quot; /&gt;
-
+			<Item marker="//office#0#"/>
+			<Item marker="&lt;!--//office#2#--&gt;">
+				<Reference Include="DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"/>
+				<Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+			</Item>
+			<Item marker="&lt;!--//office#11#--&gt;">
+				<Reference Include="DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.Office.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Web.ASPxRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.Web.ASPxSpreadsheet.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+			</Item>
+			<Item marker="&lt;!--//office#17#--&gt;">
+				<Reference Include="DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
+					<SpecificVersion>False</SpecificVersion>
+				</Reference>
+				<Reference Include="DevExpress.Office.v19.2.Core">
+					<SpecificVersion>False</SpecificVersion>
+				</Reference>
+				<Reference Include="DevExpress.RichEdit.v19.2.Core">
+					<SpecificVersion>False</SpecificVersion>
+				</Reference>
+				<Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" >
+					<SpecificVersion>False</SpecificVersion>
+				</Reference>
 			</Item>
 			<Item marker="//office#3">
         byte[] _text;
@@ -313,6 +330,14 @@
 			set { SetPropertyValue(nameof(Data), ref data, value); }
 		}
 			</Item>
+			<Item marker="&lt;!--//office#9--&gt;">
+    &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
+      &lt;SubType&gt;Component&lt;/SubType&gt;
+    &lt;/Compile&gt;
+			</Item>
+
+
+
 			<Item marker="//office#4">
   this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
    this.officeWindowsFormsModule1 = new DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule();
@@ -330,16 +355,8 @@
  &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
     &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
 			</Item>
-			<Item marker="&lt;!--//office#9--&gt;">
-    &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
-      &lt;SubType&gt;Component&lt;/SubType&gt;
-    &lt;/Compile&gt;
-			</Item>
-			<Item marker="&lt;!--//office#11#--&gt;">
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
-	&lt;Reference Include=&quot;DevExpress.Web.ASPxRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-			</Item>
+
+
 			<Item marker="//office#12#">
     this.officeModule1 = new DevExpress.ExpressApp.Office.OfficeModule();
     this.officeAspNetModule1 = new DevExpress.ExpressApp.Office.Web.OfficeAspNetModule();
@@ -360,6 +377,7 @@
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.OfficeModule));
 
 			</Item>
+
 		</Token>
 	</Tokens>
 </Replace>

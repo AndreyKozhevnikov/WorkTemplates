@@ -108,6 +108,8 @@
 		<Reference Include="DevExpress.Xpo.v19.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
+		
+		
 		<Reference Include="System">
 			<Private>False</Private>
 		</Reference>

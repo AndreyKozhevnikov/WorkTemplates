@@ -29,6 +29,7 @@ namespace dxTestSolution.Module {
 			BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
 			
 			//validation#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.ValidationModule));
+			//office#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.OfficeModule));
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             ModuleUpdater updater = new DatabaseUpdate.Updater(objectSpace, versionFromDB);

@@ -103,7 +103,7 @@
 		<Reference Include="DevExpress.XtraPrinting.v19.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<!--//office#2-->
+		<!--//office#2#-->
 		<!--//validation#1#-->
 		<!--//validation#3#-->
 

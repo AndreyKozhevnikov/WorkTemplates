@@ -66,12 +66,11 @@
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<!--//validation#1#-->
-		<!--//report#9-->
+		<!--//report#9#-->
+		<!--//office#17#-->
 		
 		
-		<Reference Include="DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
-			<SpecificVersion>False</SpecificVersion>
-		</Reference>
+
 		<Reference Include="DevExpress.ExpressApp.Security.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
@@ -79,12 +78,8 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="DevExpress.Office.v19.2.Core">
-			<SpecificVersion>False</SpecificVersion>
-		</Reference>
-		<Reference Include="DevExpress.RichEdit.v19.2.Core">
-			<SpecificVersion>False</SpecificVersion>
-		</Reference>
+
+
 		<Reference Include="DevExpress.RichEdit.v19.2.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>

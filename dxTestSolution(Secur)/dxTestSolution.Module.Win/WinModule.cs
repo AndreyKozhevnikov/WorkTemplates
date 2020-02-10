@@ -21,6 +21,7 @@ namespace dxTestSolution.Module.Win {
         public dxTestSolutionWindowsFormsModule() {
             InitializeComponent();
 			//validation#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule));
+			//office#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule));
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             return ModuleUpdater.EmptyModuleUpdaters;

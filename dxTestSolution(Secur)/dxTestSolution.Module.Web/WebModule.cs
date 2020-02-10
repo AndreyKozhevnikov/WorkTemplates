@@ -21,6 +21,7 @@ namespace dxTestSolution.Module.Web {
         public dxTestSolutionAspNetModule() {
             InitializeComponent();
 			//validation#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.Web.ValidationAspNetModule));
+			//office#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Office.Web.OfficeAspNetModule));
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             return ModuleUpdater.EmptyModuleUpdaters;
