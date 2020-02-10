@@ -331,9 +331,9 @@
 		}
 			</Item>
 			<Item marker="&lt;!--//office#9--&gt;">
-    &lt;Compile Include=&quot;Controllers\ClearMailMergeCacheController.cs&quot;&gt;
-      &lt;SubType&gt;Component&lt;/SubType&gt;
-    &lt;/Compile&gt;
+				<Compile Include="Controllers\ClearMailMergeCacheController.cs">
+					<SubType>Component</SubType>
+				</Compile>
 			</Item>
 
 
@@ -352,8 +352,8 @@
            private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
 			</Item>
 			<Item marker="&lt;!--//office#8--&gt;">
- &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a&quot; /&gt;
-    &lt;Reference Include=&quot;DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL&quot; /&gt;
+ <Reference Include="DevExpress.ExpressApp.Office.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Office.Win.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
 			</Item>
 
 
