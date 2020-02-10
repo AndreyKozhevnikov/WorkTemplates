@@ -65,6 +65,8 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
   <!--//office#2-->
+  	<!--//validation#1#-->
+	<!--//validation#2#-->
     <Reference Include="DevExpress.Utils.v19.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

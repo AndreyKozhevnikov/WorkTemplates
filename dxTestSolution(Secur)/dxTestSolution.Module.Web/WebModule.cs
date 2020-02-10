@@ -20,6 +20,7 @@ namespace dxTestSolution.Module.Web {
     public sealed partial class dxTestSolutionAspNetModule : ModuleBase {
         public dxTestSolutionAspNetModule() {
             InitializeComponent();
+			//validation#0#this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.Web.ValidationAspNetModule));
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             return ModuleUpdater.EmptyModuleUpdaters;
