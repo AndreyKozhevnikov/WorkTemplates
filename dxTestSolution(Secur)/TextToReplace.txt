@@ -29,9 +29,6 @@
 				<Reference Include="DevExpress.ExpressApp.Validation.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
-				<Reference Include="DevExpress.ExpressApp.Validation.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-					<SpecificVersion>False</SpecificVersion>
-				</Reference>
 			</Item>
 			<Item marker="&lt;!--//validation#2#--&gt;">
 				<Reference Include="DevExpress.ExpressApp.Validation.Web.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
