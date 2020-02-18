@@ -18,5 +18,8 @@ using DevExpress.Persistent.Base.General;
 using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.BusinessObjects {
-  
+      [DomainComponent]
+    public class MyNonPersistentClass {
+        public string TestProperty { get; set; }
+    }
 }
