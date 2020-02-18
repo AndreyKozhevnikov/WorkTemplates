@@ -13,6 +13,7 @@ using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.Persistent.BaseImpl;
+using dxTestSolution.Module.BusinessObjects;
 
 namespace dxTestSolution.Module.Win {
     [ToolboxItemFilter("Xaf.Platform.Win")]
