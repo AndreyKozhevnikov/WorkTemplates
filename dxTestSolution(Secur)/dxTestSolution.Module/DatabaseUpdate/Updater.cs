@@ -26,7 +26,10 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             //    theObject = ObjectSpace.CreateObject<DomainObject1>();
             //    theObject.Name = name;
             //}
-
+            var cnt = ObjectSpace.GetObjects<Contact>().Count;
+            if(cnt > 0) {
+                return;
+            }
             for (int i = 0; i < 10; i++) {
                 string contactName = "FirstName" + i;
                 var contact = CreateObject<Contact>("FirstName", contactName);
