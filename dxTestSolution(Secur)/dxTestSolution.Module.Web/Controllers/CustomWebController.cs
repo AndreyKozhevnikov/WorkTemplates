@@ -37,7 +37,7 @@ namespace dxTestSolution.Module.Web.Controllers {
 		//public class CustomWebController : ObjectViewController<DetailView,Contact> {
     public class CustomWebController : ViewController {
         public CustomWebController() {
-			// var myAction1 = new PopupWindowShowAction(this, "MyWinAction1", null);
+			// var myAction1 = new PopupWindowShowAction(this, "MyWebPopupAction1", null);
             // myAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
              var myAction1 = new SimpleAction(this, "MyWebAction1", null);
               myAction1.Execute += MyAction1_Execute;

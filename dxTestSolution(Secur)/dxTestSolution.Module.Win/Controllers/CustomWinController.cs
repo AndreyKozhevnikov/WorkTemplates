@@ -31,7 +31,7 @@ namespace dxTestSolution.Module.Win.Controllers {
 	//public class CustomWinController : ObjectViewController<ListView,Contact> {
     public class CustomWinController : ViewController {
         public CustomWinController() {
-			// var myAction1 = new PopupWindowShowAction(this, "MyWinAction1", null);
+			// var myAction1 = new PopupWindowShowAction(this, "MyWinPopupAction1", null);
             // myAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
              var myAction1 = new SimpleAction(this, "MyWinAction1", null);
               myAction1.Execute += MyAction1_Execute;
