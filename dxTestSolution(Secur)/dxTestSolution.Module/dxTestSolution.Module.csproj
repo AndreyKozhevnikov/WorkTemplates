@@ -71,7 +71,7 @@
 		
 		
 
-		<Reference Include="DevExpress.ExpressApp.Security.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+		<Reference Include="DevExpress.ExpressApp.Security.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.2">
@@ -83,12 +83,6 @@
 		<Reference Include="DevExpress.RichEdit.v19.2.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-
-
-
-
-
-
 		<Reference Include="System">
 			<Name>System</Name>
 			<Private>False</Private>

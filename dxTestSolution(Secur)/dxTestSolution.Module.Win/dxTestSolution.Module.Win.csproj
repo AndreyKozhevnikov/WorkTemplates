@@ -124,13 +124,6 @@
 		<Reference Include="DevExpress.RichEdit.v19.2.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-
-
-
-
-
-
-
 		<Reference Include="System">
 			<Name>System</Name>
 			<Private>False</Private>
