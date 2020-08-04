@@ -33,12 +33,12 @@ namespace dxTestSolution.Module.Web.Controllers {
 	
 	
 	
-	//public class CustomWebController : ObjectViewController<ListView,Contact> {
+	  //public class CustomWebController : ObjectViewController<ListView,Contact> {
 		//public class CustomWebController : ObjectViewController<DetailView,Contact> {
     public class CustomWebController : ViewController {
         public CustomWebController() {
-			// var myAction1 = new PopupWindowShowAction(this, "MyWebPopupAction1", null);
-            // myAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
+			// var myPopupAction1 = new PopupWindowShowAction(this, "MyWebPopupAction1", null);
+            // myPopupAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
              var myAction1 = new SimpleAction(this, "MyWebAction1", null);
               myAction1.Execute += MyAction1_Execute;
             
@@ -55,9 +55,17 @@ namespace dxTestSolution.Module.Web.Controllers {
 
         protected override void OnActivated() {
             base.OnActivated();
+            // var cnt = Frame.GetController<ListViewProcessCurrentObjectController>();
+            // if(cnt != null) {
+
+            // }            
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();
+            //ASPxGridListEditor listEditor = ((ListView)View).Editor as ASPxGridListEditor;
+            //if(listEditor != null){
+             
+            //}
         }
         protected override void OnDeactivated() {
             base.OnDeactivated();

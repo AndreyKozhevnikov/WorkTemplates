@@ -30,12 +30,12 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             if(cnt > 0) {
                 return;
             }
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 2; i++) {
                 string contactName = "FirstName" + i;
                 var contact = CreateObject<Contact>("FirstName", contactName);
                 contact.LastName = "LastName" + i;
 				contact.Age = i * 10;
-                for(int j = 0; j < 5; j++) {
+                for(int j = 0; j < 2; j++) {
                     string taskName = "Subject" + i + " - " + j;
                     var task = CreateObject<MyTask>("Subject", taskName);
                     task.AssignedTo = contact;

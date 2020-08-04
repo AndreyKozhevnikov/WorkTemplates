@@ -22,6 +22,10 @@ namespace dxTestSolutionXPO {
 
         static void MakeInitialData() {
             var session = new Session();
+            var c = new XPCollection<Contact>(session).Count;
+            if(c > 0) {
+                return;
+            }            
             for(int i = 0; i < 10; i++) {
                 string contactName = "FirstName" + i;
                 var contact = CreateObject<Contact>("FirstName", contactName, session);

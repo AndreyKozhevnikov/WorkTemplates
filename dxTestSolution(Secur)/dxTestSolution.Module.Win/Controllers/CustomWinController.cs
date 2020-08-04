@@ -27,12 +27,12 @@ using DevExpress.ExpressApp.Win;
 namespace dxTestSolution.Module.Win.Controllers {
 	
 	
-	
+	//public class CustomWinController : ObjectViewController<DetailView,Contact> {	
 	//public class CustomWinController : ObjectViewController<ListView,Contact> {
     public class CustomWinController : ViewController {
         public CustomWinController() {
-			// var myAction1 = new PopupWindowShowAction(this, "MyWinPopupAction1", null);
-            // myAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
+			// var myPopupAction1 = new PopupWindowShowAction(this, "MyWinPopupAction1", null);
+            // myPopupAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
              var myAction1 = new SimpleAction(this, "MyWinAction1", null);
               myAction1.Execute += MyAction1_Execute;
             
@@ -49,9 +49,19 @@ namespace dxTestSolution.Module.Win.Controllers {
         //}
         protected override void OnActivated() {
             base.OnActivated();
+            // var cnt = Frame.GetController<ListViewProcessCurrentObjectController>();
+            // if(cnt != null) {
+
+            // }
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();
+            // GridListEditor listEditor = ((ListView)View).Editor as GridListEditor;
+            // if (listEditor != null) {
+              // GridView gridView = listEditor.GridView;
+              // gridView.OptionsView.EnableAppearanceOddRow = true;
+              // gridView.Appearance.OddRow.BackColor = Color.FromArgb(244, 244, 244);
+            // }
         }
         protected override void OnDeactivated() {
             base.OnDeactivated();
