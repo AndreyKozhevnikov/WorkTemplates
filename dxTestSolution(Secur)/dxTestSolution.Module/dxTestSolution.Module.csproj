@@ -43,26 +43,26 @@
 		<ErrorReport>prompt</ErrorReport>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="DevExpress.Data.v19.2">
+		<Reference Include="DevExpress.Data.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.v19.2">
+		<Reference Include="DevExpress.ExpressApp.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Xpo.v19.2">
+		<Reference Include="DevExpress.ExpressApp.Xpo.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.Base.v19.2">
+		<Reference Include="DevExpress.Persistent.Base.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.BaseImpl.v19.2">
+		<Reference Include="DevExpress.Persistent.BaseImpl.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Printing.v19.2.Core">
+		<Reference Include="DevExpress.Printing.v20.1.Core">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Xpo.v19.2">
+		<Reference Include="DevExpress.Xpo.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<!--//validation#1#-->
@@ -71,16 +71,16 @@
 		
 		
 
-		<Reference Include="DevExpress.ExpressApp.Security.v19.2, Version=19.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+		<Reference Include="DevExpress.ExpressApp.Security.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.2">
+		<Reference Include="DevExpress.ExpressApp.Security.Xpo.v20.1">
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
 
 
-		<Reference Include="DevExpress.RichEdit.v19.2.Export">
+		<Reference Include="DevExpress.RichEdit.v20.1.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<Reference Include="System">
