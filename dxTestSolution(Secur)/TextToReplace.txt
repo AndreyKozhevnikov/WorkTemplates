@@ -26,17 +26,17 @@
 
 			</Item>
 			<Item marker="&lt;!--//validation#1#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Validation.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+				<Reference Include="DevExpress.ExpressApp.Validation.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 			</Item>
 			<Item marker="&lt;!--//validation#2#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Validation.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+				<Reference Include="DevExpress.ExpressApp.Validation.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 			</Item>
 			<Item marker="&lt;!--//validation#3#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Validation.Win.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+				<Reference Include="DevExpress.ExpressApp.Validation.Win.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 			</Item>
@@ -191,30 +191,30 @@
 
 			</Item>
 			<Item marker="&lt;!--//report#4--&gt;">
-				<Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.DataAccess.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
 
-				<Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
 			</Item>
 			<Item marker="&lt;!--//report#5--&gt;">
-				<add name="ASPxWebDocumentViewerHandlerModule" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
-				<add name="ASPxQueryBuilderDesignerHandlerModule" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
+				<add name="ASPxWebDocumentViewerHandlerModule" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
+				<add name="ASPxQueryBuilderDesignerHandlerModule" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
 
 			</Item>
 			<Item marker="&lt;!--//report#6--&gt;">
-				<add verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<add verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
 
 			</Item>
 			<Item marker="&lt;!--//report#7--&gt;">
-				<add assembly="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<add assembly="DevExpress.XtraReports.v20.1.Web, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<add assembly="DevExpress.XtraReports.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<add assembly="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<add assembly="DevExpress.ExpressApp.ReportsV2.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add assembly="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add assembly="DevExpress.XtraReports.v20.1.Web, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add assembly="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add assembly="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<add assembly="DevExpress.ExpressApp.ReportsV2.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
 
 			</Item>
 			<Item marker="//report#8">
@@ -222,7 +222,7 @@
 
 			</Item>
 			<Item marker="&lt;!--//report#9#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 				<Reference Include="DevExpress.Utils.v20.1" />
@@ -256,11 +256,11 @@
 
 			</Item>
 			<Item marker="&lt;!--//report#13--&gt;">
-				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.XtraReports.v20.1.Web, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.ExpressApp.ReportsV2.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.XtraReports.v20.1.Web, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
 
 
 			</Item>
@@ -283,24 +283,24 @@
 		<Token name="office">
 			<Item marker="//office#0#"/>
 			<Item marker="&lt;!--//office#2#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.ExpressApp.Office.Win.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"/>
-				<Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<Reference Include="DevExpress.XtraSpreadsheet.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.Office.Win.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL"/>
+				<Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.XtraSpreadsheet.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
 			</Item>
 			<Item marker="&lt;!--//office#11#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.ExpressApp.Office.Web.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-				<Reference Include="DevExpress.Web.ASPxRichEdit.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<Reference Include="DevExpress.Web.ASPxSpreadsheet.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.Office.Web.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.Web.ASPxRichEdit.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.Web.ASPxSpreadsheet.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
 			</Item>
 			<Item marker="&lt;!--//office#17#--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
+				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" >
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 				<Reference Include="DevExpress.Office.v20.1.Core">
@@ -309,7 +309,7 @@
 				<Reference Include="DevExpress.RichEdit.v20.1.Core">
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
-				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" >
+				<Reference Include="DevExpress.Spreadsheet.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" >
 					<SpecificVersion>False</SpecificVersion>
 				</Reference>
 			</Item>
@@ -353,8 +353,8 @@
            private DevExpress.ExpressApp.Office.OfficeModule officeModule1;
 			</Item>
 			<Item marker="&lt;!--//office#8--&gt;">
-				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-				<Reference Include="DevExpress.ExpressApp.Office.Win.v20.1, Version=20.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+				<Reference Include="DevExpress.ExpressApp.Office.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+				<Reference Include="DevExpress.ExpressApp.Office.Win.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
 			</Item>
 
 
