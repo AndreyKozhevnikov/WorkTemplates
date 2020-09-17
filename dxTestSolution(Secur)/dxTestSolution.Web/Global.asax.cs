@@ -26,6 +26,8 @@ namespace dxTestSolution.Web {
         protected void Session_Start(Object sender, EventArgs e) {
 		    Tracing.Initialize();
             WebApplication.SetInstance(Session, new dxTestSolutionAspNetApplication());
+               SecurityStrategy security = WebApplication.Instance.GetSecurityStrategy();
+            security.RegisterXPOAdapterProviders();
 			DevExpress.ExpressApp.Web.Templates.DefaultVerticalTemplateContentNew.ClearSizeLimit();
             WebApplication.Instance.SwitchToNewStyle();
 			//secur#7
