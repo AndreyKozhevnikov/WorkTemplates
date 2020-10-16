@@ -5,5 +5,5 @@ FOR /R %%H IN (*.log) DO del "%%H"
 FOR /r %%G IN (*.bak) DO del "%%G"
 FOR /R %%J IN (*.suo) DO del "%%J"
 
-IF EXIST .vs      rd .vs /s/q
+
 
