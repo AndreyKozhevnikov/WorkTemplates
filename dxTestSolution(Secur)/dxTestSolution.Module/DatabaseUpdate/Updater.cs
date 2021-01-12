@@ -50,7 +50,7 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             T theObject = ObjectSpace.FindObject<T>(new OperandProperty(propertyName) == value);
             if (theObject == null){
                 theObject = ObjectSpace.CreateObject<T>();
-                ((BaseObject)(Object)theObject).SetMemberValue(propertyName, value);
+                ((XPBaseObject)(Object)theObject).SetMemberValue(propertyName, value);
             }
           
             return theObject;

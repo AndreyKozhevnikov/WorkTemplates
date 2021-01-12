@@ -17,6 +17,7 @@ using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.BusinessObjects {
      [DefaultClassOptions]
+     [DefaultProperty("Subject")]
     public class MyTask : BaseObject {
         public MyTask(Session session)
             : base(session) {
