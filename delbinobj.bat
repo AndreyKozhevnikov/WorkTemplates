@@ -5,5 +5,8 @@ FOR /R %%H IN (*.log) DO del "%%H"
 FOR /r %%G IN (*.bak) DO del "%%G"
 FOR /R %%J IN (*.suo) DO del "%%J"
 
+for /f %%a in ('dir /b *.sln 2^> nul') do set sln=%%a
+if defined sln set sln=%cd%\%sln%
+start "" /b "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" "%sln%"
 
 
