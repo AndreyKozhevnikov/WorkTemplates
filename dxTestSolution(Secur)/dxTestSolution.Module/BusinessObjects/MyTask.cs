@@ -25,41 +25,41 @@ namespace dxTestSolution.Module.BusinessObjects {
         public override void AfterConstruction() {
             base.AfterConstruction();
         }
-        string subject;
+        string _subject;
         public string Subject {
             get {
-                return subject;
+                return _subject;
             }
             set {
-                SetPropertyValue(nameof(Subject), ref subject, value);
+                SetPropertyValue(nameof(Subject), ref _subject, value);
             }
         }
-        Contact assignedTo;
+        Contact _assignedTo;
         [Association("Contact-Tasks")]
         public Contact AssignedTo {
             get {
-                return assignedTo;
+                return _assignedTo;
             }
             set {
-                SetPropertyValue(nameof(AssignedTo), ref assignedTo, value);
+                SetPropertyValue(nameof(AssignedTo), ref _assignedTo, value);
             }
         }
-        bool isActive;
+        bool _isActive;
         public bool IsActive {
             get {
-                return isActive;
+                return _isActive;
             }
             set {
-                SetPropertyValue(nameof(IsActive), ref isActive, value);
+                SetPropertyValue(nameof(IsActive), ref _isActive, value);
             }
         }
-        Priority priority;
+        Priority _priority;
         public Priority Priority {
             get {
-                return priority;
+                return _priority;
             }
             set {
-                SetPropertyValue(nameof(Priority), ref priority, value);
+                SetPropertyValue(nameof(Priority), ref _priority, value);
             }
         }
     }

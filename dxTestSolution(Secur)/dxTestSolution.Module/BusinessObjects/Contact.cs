@@ -26,31 +26,31 @@ namespace dxTestSolution.Module.BusinessObjects {
         public override void AfterConstruction() {
             base.AfterConstruction();
         }
-        string firstName;
+        string _firstName;
         public string FirstName {
             get {
-                return firstName;
+                return _firstName;
             }
             set {
-                SetPropertyValue(nameof(FirstName), ref firstName, value);
+                SetPropertyValue(nameof(FirstName), ref _firstName, value);
             }
         }
-        string lastName;
+        string _lastName;
         public string LastName {
             get {
-                return lastName;
+                return _lastName;
             }
             set {
-                SetPropertyValue(nameof(LastName), ref lastName, value);
+                SetPropertyValue(nameof(LastName), ref _lastName, value);
             }
         }
-		int age;
+		int _age;
         public int Age {
             get {
-                return age;
+                return _age;
             }
             set {
-                SetPropertyValue(nameof(Age), ref age, value);
+                SetPropertyValue(nameof(Age), ref _age, value);
             }
         }
         // DateTime _birthDate;
