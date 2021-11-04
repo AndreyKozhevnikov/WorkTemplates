@@ -5,7 +5,7 @@ using DevExpress.Xpo;
 
 
 namespace dxTestSolutionXPO.Module.BusinessObjects {
-
+   [DebuggerDisplay("FirstName: {FirstName}")]
     public class Contact : XPObject { 
         public Contact(Session session)
             : base(session) {

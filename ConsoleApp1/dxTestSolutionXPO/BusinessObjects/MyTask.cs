@@ -5,6 +5,7 @@ using DevExpress.Xpo;
 
 
 namespace dxTestSolutionXPO.Module.BusinessObjects {
+     [DebuggerDisplay("Subject: {Subject}")]
     public class MyTask : XPObject { 
         public MyTask(Session session)
             : base(session) {
