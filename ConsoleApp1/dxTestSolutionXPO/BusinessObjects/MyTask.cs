@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 using DevExpress.Xpo;
-
+using System.Diagnostics;
 
 namespace dxTestSolutionXPO.Module.BusinessObjects {
      [DebuggerDisplay("Subject: {Subject}")]
