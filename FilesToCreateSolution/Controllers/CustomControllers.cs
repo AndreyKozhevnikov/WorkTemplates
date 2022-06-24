@@ -28,14 +28,15 @@ namespace dxTestSolution.Module.Controllers {
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-            // ASPxGridListEditor listEditor = ((ListView)View).Editor as ASPxGridListEditor;
-            // if(listEditor != null) {
-                // //listEditor.Grid.Styles.AlternatingRow.BackColor = Color.FromArgb(244, 244, 244);
-            // }           
+           
         }
 
         protected override void OnActivated() {
             base.OnActivated();
+            var cnt = Frame.GetController<NewObjectViewController>();
+            if(cnt != null) {
+
+            }
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();

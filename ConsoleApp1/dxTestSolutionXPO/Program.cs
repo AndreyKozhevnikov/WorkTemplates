@@ -46,7 +46,7 @@ namespace dxTestSolutionXPO {
             T theObject = session.FindObject<T>(new OperandProperty(propertyName) == value);
             if(theObject == null){
                 theObject = (T)Activator.CreateInstance(typeof(T), new object[] { session });
-                ((XPObject)(object)theObject).SetMemberValue(propertyName, value);
+                ((XPCustomObject)(object)theObject).SetMemberValue(propertyName, value);
             }
 
             return theObject;

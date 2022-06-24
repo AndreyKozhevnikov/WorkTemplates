@@ -19,23 +19,35 @@ using System.IO;
 using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
-	//public class CustomController : ObjectViewController<ListView,Contact> {
-    public class CustomController : ViewController {
-        public CustomController() {
-           // var myAction1 = new SimpleAction(this, "MyAction1", null);
-           // myAction1.Execute += MyAction1_Execute;
+	//public class CustomWebController : ObjectViewController<ListView,Contact> {
+    public class CustomWebController : ViewController {
+        public CustomWebController() {
+            // var mypopAction1 = new PopupWindowShowAction(this, "MyWebPopupAction1", null);
+            // mypopAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
+            var myAction1 = new SimpleAction(this, "MyWebAction1", null);
+            myAction1.Execute += MyAction1_Execute;
             
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
             // ASPxGridListEditor listEditor = ((ListView)View).Editor as ASPxGridListEditor;
             // if(listEditor != null) {
-                // //listEditor.Grid.Styles.AlternatingRow.BackColor = Color.FromArgb(244, 244, 244);
+                // listEditor.Grid.Selection.UnselectAll();
             // }           
+        }
+        private void MyAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
+            var os = Application.CreateObjectSpace(typeof(Contact));
+            var obj = os.CreateObject<Contact>();
+            var view = Application.CreateDetailView(os, obj);
+            e.View = View;
         }
 
         protected override void OnActivated() {
             base.OnActivated();
+            var cnt = Frame.GetController<NewObjectViewController>();
+            if(cnt != null) {
+
+            }
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();

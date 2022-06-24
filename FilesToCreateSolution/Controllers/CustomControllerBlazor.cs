@@ -20,22 +20,23 @@ using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
 	//public class CustomController : ObjectViewController<ListView,Contact> {
-    public class CustomController : ViewController {
-        public CustomController() {
-           // var myAction1 = new SimpleAction(this, "MyAction1", null);
-           // myAction1.Execute += MyAction1_Execute;
+    public class CustomBlazorController : ViewController {
+        public CustomBlazorController() {
+            var myAction1 = new SimpleAction(this, "MyBlazorAction1", null);
+            myAction1.Execute += MyAction1_Execute;
             
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-            // ASPxGridListEditor listEditor = ((ListView)View).Editor as ASPxGridListEditor;
-            // if(listEditor != null) {
-                // //listEditor.Grid.Styles.AlternatingRow.BackColor = Color.FromArgb(244, 244, 244);
-            // }           
+           
         }
 
         protected override void OnActivated() {
             base.OnActivated();
+            var cnt = Frame.GetController<NewObjectViewController>();
+            if(cnt != null) {
+
+            }
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();

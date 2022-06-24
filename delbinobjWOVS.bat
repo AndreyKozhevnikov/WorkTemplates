@@ -7,6 +7,6 @@ FOR /R %%J IN (*.suo) DO del "%%J"
 
 for /f %%a in ('dir /b *.sln 2^> nul') do set sln=%%a
 if defined sln set sln=%cd%\%sln%
-start "" /b "C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\devenv.exe" "%sln%"
+
 
 

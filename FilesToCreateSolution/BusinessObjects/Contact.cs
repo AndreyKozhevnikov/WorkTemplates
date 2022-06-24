@@ -69,5 +69,22 @@ namespace dxTestSolution.Module.BusinessObjects {
                 return GetCollection<MyTask>(nameof(Tasks));
             }
         }
+		
+		        // byte[] _text;
+        // [EditorAlias(EditorAliases.RichTextPropertyEditor)]
+        // public byte[] Text {
+            // get {
+                // return _text;
+            // }
+            // set {
+                // SetPropertyValue(nameof(Text), ref _text, value);
+            // }
+        // }
+		// private byte[] data;
+        // [EditorAlias(EditorAliases.SpreadsheetPropertyEditor)] 
+        // public byte[] Data { 
+			// get { return data; }
+			// set { SetPropertyValue(nameof(Data), ref data, value); }
+		// }
     }
 }
