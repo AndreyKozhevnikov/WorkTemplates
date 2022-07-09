@@ -19,7 +19,7 @@ using System.IO;
 using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
-	//public class CustomController : ObjectViewController<ListView,Contact> {
+	//public class CustomBlazorController : ObjectViewController<ListView,Contact> {
     public class CustomBlazorController : ViewController {
         public CustomBlazorController() {
             var myAction1 = new SimpleAction(this, "MyBlazorAction1", null);
