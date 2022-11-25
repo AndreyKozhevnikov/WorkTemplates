@@ -13,7 +13,7 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
-using dxTestSolution.Module.BusinessObjects;
+
 
 using System.IO;
 using System.ComponentModel;
@@ -28,7 +28,9 @@ namespace dxTestSolution.Module.Controllers {
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-           
+             //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
+            //var obj = os.CreateObject<MyNonPersistentClass>();
+            //var detailView = Application.CreateDetailView(os, obj);
         }
 
         protected override void OnActivated() {

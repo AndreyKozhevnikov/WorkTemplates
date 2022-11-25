@@ -28,7 +28,9 @@ namespace dxTestSolution.Module.Controllers {
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-           
+             //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
+            //var obj = os.CreateObject<MyNonPersistentClass>();
+            //var detailView = Application.CreateDetailView(os, obj);
         }
 
         protected override void OnActivated() {
@@ -40,6 +42,10 @@ namespace dxTestSolution.Module.Controllers {
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();
+			  //if (View.Editor is DxGridListEditor gridListEditor) {
+     //           IDxGridAdapter dataGridAdapter = gridListEditor.GetGridAdapter();
+     //           dataGridAdapter.GridModel.ColumnResizeMode = DevExpress.Blazor.GridColumnResizeMode.ColumnsContainer;
+     //       }
         }
         protected override void OnDeactivated() {
             base.OnDeactivated();

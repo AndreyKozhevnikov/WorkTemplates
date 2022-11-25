@@ -1,3 +1,4 @@
+ren .gitignoreToCopy .gitignore
 cd %~dp0
 git init
 timeout 1

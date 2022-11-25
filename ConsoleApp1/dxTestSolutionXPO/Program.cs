@@ -14,10 +14,10 @@ namespace dxTestSolutionXPO {
         static void Main(string[] args) {
             ConnectionHelper.Connect(DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
             MakeInitialData();
-            var session = new Session();
-            var lst = new XPCollection<MyTask>(session);
+            var uow = new UnitOfWork();
+            var lst = new XPCollection<MyTask>(uow);
             var cnt = lst.Count;
-            var c = new XPCollection<Contact>(session)[0].Tasks.ToList();
+            var c = new XPCollection<Contact>(uow)[0].Tasks.ToList();
         }
 
         static void MakeInitialData() {

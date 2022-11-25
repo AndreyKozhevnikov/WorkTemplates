@@ -30,7 +30,7 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             if(cnt > 0) {
                 return;
             }
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 5; i++) {
                 string contactName = "FirstName" + i;
                 var contact = CreateObject<Contact>("FirstName", contactName);
                 contact.LastName = "LastName" + i;

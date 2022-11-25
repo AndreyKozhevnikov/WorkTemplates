@@ -39,7 +39,7 @@ namespace dxTestSolution.Module.Controllers {
             var os = Application.CreateObjectSpace(typeof(Contact));
             var obj = os.CreateObject<Contact>();
             var view = Application.CreateDetailView(os, obj);
-            e.View = View;
+            e.View = view;
         }
 
         protected override void OnActivated() {

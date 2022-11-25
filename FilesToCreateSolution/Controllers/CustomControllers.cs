@@ -22,13 +22,15 @@ namespace dxTestSolution.Module.Controllers {
 	//public class CustomController : ObjectViewController<ListView,Contact> {
     public class CustomController : ViewController {
         public CustomController() {
-           // var myAction1 = new SimpleAction(this, "MyAction1", null);
-           // myAction1.Execute += MyAction1_Execute;
+           var myAction1 = new SimpleAction(this, "MyAction1", null);
+           myAction1.Execute += MyAction1_Execute;
             
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-           
+            //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
+            //var obj = os.CreateObject<MyNonPersistentClass>();
+            //var detailView = Application.CreateDetailView(os, obj);
         }
 
         protected override void OnActivated() {
