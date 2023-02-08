@@ -22,8 +22,8 @@ namespace dxTestSolution.Module.Controllers {
 	//public class CustomController : ObjectViewController<ListView,Contact> {
     public class CustomController : ViewController {
         public CustomController() {
-           var myAction1 = new SimpleAction(this, "MyAction1", null);
-           myAction1.Execute += MyAction1_Execute;
+          // var myAction1 = new SimpleAction(this, "MyAction1", null);
+          // myAction1.Execute += MyAction1_Execute;
             
         }
 

@@ -1,4 +1,7 @@
-﻿using System;
+﻿//,new MyUpdater(objectSpace,versionFromDB)
+//            defaultRole.AddNavigationPermission(@"Application/NavigationItems/Items/Default/Items/Contact_ListView", SecurityPermissionState.Allow);
+            //defaultRole.AddTypePermissionsRecursively<Contact>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
+using System;
 using System.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.Data.Filtering;
@@ -20,6 +23,7 @@ namespace dxTestSolution.Module.DatabaseUpdate {
         }
         public override void UpdateDatabaseAfterUpdateSchema() {
             base.UpdateDatabaseAfterUpdateSchema();
+			//,new MyUpdater(objectSpace,versionFromDB)
             //string name = "MyName";
             //DomainObject1 theObject = ObjectSpace.FindObject<DomainObject1>(CriteriaOperator.Parse("Name=?", name));
             //if(theObject == null) {
