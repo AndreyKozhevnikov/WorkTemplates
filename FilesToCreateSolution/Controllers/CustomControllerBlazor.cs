@@ -19,16 +19,16 @@ using System.IO;
 using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
-	//public class CustomBlazorController : ObjectViewController<ListView,Contact> {
+    //public class CustomBlazorController : ObjectViewController<DetailView,Contact> {
     public class CustomBlazorController : ViewController {
         public CustomBlazorController() {
-            var myAction1 = new SimpleAction(this, "MyBlazorAction1", null);
+            var myAction1 = new SimpleAction(this, "MyBlazorAction1", PredefinedCategory.Edit);
             myAction1.Execute += MyAction1_Execute;
-            
+
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-             //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
+            //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
             //var obj = os.CreateObject<MyNonPersistentClass>();
             //var detailView = Application.CreateDetailView(os, obj);
         }
@@ -36,16 +36,20 @@ namespace dxTestSolution.Module.Controllers {
         protected override void OnActivated() {
             base.OnActivated();
             var cnt = Frame.GetController<NewObjectViewController>();
-            if(cnt != null) {
+            if (cnt != null) {
 
             }
+            //View.CustomizeViewItemControl<StringPropertyEditor>(this, SetCalendarView, nameof(Contact.LastName));
         }
+        //private void SetCalendarView(StringPropertyEditor propertyEditor) {
+
+        //}
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();
-			  //if (View.Editor is DxGridListEditor gridListEditor) {
-     //           IDxGridAdapter dataGridAdapter = gridListEditor.GetGridAdapter();
-     //           dataGridAdapter.GridModel.ColumnResizeMode = DevExpress.Blazor.GridColumnResizeMode.ColumnsContainer;
-     //       }
+            //if (View.Editor is DxGridListEditor gridListEditor) {
+            //           IDxGridAdapter dataGridAdapter = gridListEditor.GetGridAdapter();
+            //           dataGridAdapter.GridModel.ColumnResizeMode = DevExpress.Blazor.GridColumnResizeMode.ColumnsContainer;
+            //       }
         }
         protected override void OnDeactivated() {
             base.OnDeactivated();

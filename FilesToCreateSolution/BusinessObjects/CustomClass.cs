@@ -19,7 +19,7 @@ using DevExpress.ExpressApp.SystemModule;
 
 namespace dxTestSolution.Module.BusinessObjects {
       [DomainComponent]
-    public class MyNonPersistentClass {
+    public class MyNonPersistentClass:NonPersistentBaseObject {
         public string TestProperty { get; set; }
     }
 }

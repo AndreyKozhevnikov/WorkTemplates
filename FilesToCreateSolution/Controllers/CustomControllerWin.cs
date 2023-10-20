@@ -13,16 +13,16 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
-
+using dxTestSolution.Module.BusinessObjects;
 
 using System.IO;
 using System.ComponentModel;
 
 namespace dxTestSolution.Module.Controllers {
-	//public class CustomWinController : ObjectViewController<ListView,Contact> {
+	//public class CustomWinController : ObjectViewController<DetailView,Contact> {
     public class CustomWinController : ViewController {
         public CustomWinController() {
-            var myAction1 = new SimpleAction(this, "MyWinAction1", null);
+            var myAction1 = new SimpleAction(this, "MyWinAction1", PredefinedCategory.Edit);
             myAction1.Execute += MyAction1_Execute;
             
         }

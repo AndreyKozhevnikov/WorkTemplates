@@ -1,18 +1,12 @@
 ﻿//,new MyUpdater(objectSpace,versionFromDB)
 //            defaultRole.AddNavigationPermission(@"Application/NavigationItems/Items/Default/Items/Contact_ListView", SecurityPermissionState.Allow);
             //defaultRole.AddTypePermissionsRecursively<Contact>(SecurityOperations.CRUDAccess, SecurityPermissionState.Allow);
-using System;
-using System.Linq;
 using DevExpress.ExpressApp;
-using DevExpress.Data.Filtering;
-using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
-using DevExpress.Xpo;
-using DevExpress.ExpressApp.Xpo;
-using DevExpress.Persistent.BaseImpl;
-using DevExpress.ExpressApp.Security;
-using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 
+using dxTestSolution.Module.BusinessObjects;
+
+using System;
 using dxTestSolution.Module.BusinessObjects;
 
 namespace dxTestSolution.Module.DatabaseUpdate {
@@ -35,13 +29,13 @@ namespace dxTestSolution.Module.DatabaseUpdate {
                 return;
             }
             for (int i = 0; i < 5; i++) {
-                string contactName = "FirstName" + i;
-                var contact = CreateObject<Contact>("FirstName", contactName);
-                contact.LastName = "LastName" + i;
+				var contact = ObjectSpace.CreateObject<Contact>();
+				contact.FirstName = "FirstName" + i;
+				contact.LastName = "LastName" + i;
 				contact.Age = i * 10;
                 for(int j = 0; j < 2; j++) {
-                    string taskName = "Subject" + i + " - " + j;
-                    var task = CreateObject<MyTask>("Subject", taskName);
+                    var task = ObjectSpace.CreateObject<MyTask>();
+					task.Subject="Subject" + i + " - " + j;
                     task.AssignedTo = contact;
                 }
             }
@@ -49,17 +43,7 @@ namespace dxTestSolution.Module.DatabaseUpdate {
 			ObjectSpace.CommitChanges(); //Uncomment this line to persist created object(s).
         }
 
-        T CreateObject<T>(string propertyName,string value) {
-       
-            T theObject = ObjectSpace.FindObject<T>(new OperandProperty(propertyName) == value);
-            if (theObject == null){
-                theObject = ObjectSpace.CreateObject<T>();
-                ((XPBaseObject)(Object)theObject).SetMemberValue(propertyName, value);
-            }
-          
-            return theObject;
-
-        }
+  
 
         public override void UpdateDatabaseBeforeUpdateSchema() {
             base.UpdateDatabaseBeforeUpdateSchema();

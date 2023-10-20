@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DXApplication4.Module.BusinessObjects;
+namespace dxTestSolution.Module.BusinessObjects;
 [DefaultClassOptions]
 public class Contact : BaseObject {
     public virtual string FirstName { get; set; }
@@ -23,6 +23,6 @@ public class MyTask : BaseObject {
     public virtual Contact AssignedTo{ get; set; }
 }
 
-   public DbSet<MyTask> MyTasks { get; set; }
-    public DbSet<Contact> Contacts { get; set; }
+   // public DbSet<MyTask> MyTasks { get; set; }
+    // public DbSet<Contact> Contacts { get; set; }
 

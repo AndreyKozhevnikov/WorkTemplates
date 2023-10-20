@@ -24,7 +24,7 @@ namespace dxTestSolution.Module.Controllers {
         public CustomWebController() {
             // var mypopAction1 = new PopupWindowShowAction(this, "MyWebPopupAction1", null);
             // mypopAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
-            var myAction1 = new SimpleAction(this, "MyWebAction1", null);
+            var myAction1 = new SimpleAction(this, "MyWebAction1", PredefinedCategory.Edit);
             myAction1.Execute += MyAction1_Execute;
             
         }
