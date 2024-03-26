@@ -4,7 +4,7 @@ using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraGrid.Views.Grid;
 using dxTestSolution.Module.BusinessObjects;
 
-namespace dxTestSolution.Module.Controllers {
+namespace dxTestSolution.Win.Controllers {
     public class GridViewControllerWin : ObjectViewController<ListView, Contact> {
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated();

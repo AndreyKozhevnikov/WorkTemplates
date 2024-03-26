@@ -28,8 +28,8 @@ namespace dxTestSolution.Module.Controllers {
         }
 
         private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-             //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
-            //var obj = os.CreateObject<MyNonPersistentClass>();
+             //var os = Application.CreateObjectSpace(typeof(Contact));
+            //var obj = os.CreateObject<Contact>();
             //var detailView = Application.CreateDetailView(os, obj);
         }
 

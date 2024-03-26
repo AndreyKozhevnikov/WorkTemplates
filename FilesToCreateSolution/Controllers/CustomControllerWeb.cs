@@ -18,7 +18,7 @@ using DevExpress.ExpressApp.Web.Editors.ASPx;
 using System.IO;
 using System.ComponentModel;
 
-namespace dxTestSolution.Module.Controllers {
+namespace dxTestSolution.Controllers {
 	//public class CustomWebController : ObjectViewController<ListView,Contact> {
     public class CustomWebController : ViewController {
         public CustomWebController() {

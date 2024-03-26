@@ -18,41 +18,48 @@ using dxTestSolution.Module.BusinessObjects;
 using System.IO;
 using System.ComponentModel;
 
-namespace dxTestSolution.Module.Controllers {
-    //public class CustomBlazorController : ObjectViewController<DetailView,Contact> {
-    public class CustomBlazorController : ViewController {
-        public CustomBlazorController() {
-            var myAction1 = new SimpleAction(this, "MyBlazorAction1", PredefinedCategory.Edit);
-            myAction1.Execute += MyAction1_Execute;
+namespace dxTestSolution.Blazor.Server.Controllers;
+//public class CustomBlazorController : ObjectViewController<DetailView,Contact> {
+public class CustomBlazorController :ViewController {
+    public CustomBlazorController() {
+        var myAction1 = new SimpleAction(this, "MyBlazorAction1", PredefinedCategory.Edit);
+        myAction1.Execute += MyAction1_Execute;
+        // var mypopAction1 = new PopupWindowShowAction(this, "MyBlazorPopupAction1", null);
+        // mypopAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
+
+    }
+
+    private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
+        //var os = Application.CreateObjectSpace(typeof(Contact));
+        //var obj = os.CreateObject<Contact>();
+        //var detailView = Application.CreateDetailView(os, obj);
+    }
+
+
+    // private void MyAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
+    // var os = Application.CreateObjectSpace(typeof(Contact));
+    // var obj = os.CreateObject<Contact>();
+    // var view = Application.CreateDetailView(os, obj);
+	// var listView = Application.CreateListView(typeof(Contact), true);
+    // e.View = view;
+    // }
+    protected override void OnActivated() {
+        base.OnActivated();
+        var cnt = Frame.GetController<NewObjectViewController>();
+        if(cnt != null) {
 
         }
+        //View.CustomizeViewItemControl<StringPropertyEditor>(this, SetCalendarView, nameof(Contact.LastName));
+    }
+    //private void SetCalendarView(StringPropertyEditor propertyEditor) {
 
-        private void MyAction1_Execute(object sender, SimpleActionExecuteEventArgs e) {
-            //var os = Application.CreateObjectSpace(typeof(MyNonPersistentClass));
-            //var obj = os.CreateObject<MyNonPersistentClass>();
-            //var detailView = Application.CreateDetailView(os, obj);
-        }
+    //}
+    protected override void OnViewControlsCreated() {
+        base.OnViewControlsCreated();
 
-        protected override void OnActivated() {
-            base.OnActivated();
-            var cnt = Frame.GetController<NewObjectViewController>();
-            if (cnt != null) {
-
-            }
-            //View.CustomizeViewItemControl<StringPropertyEditor>(this, SetCalendarView, nameof(Contact.LastName));
-        }
-        //private void SetCalendarView(StringPropertyEditor propertyEditor) {
-
-        //}
-        protected override void OnViewControlsCreated() {
-            base.OnViewControlsCreated();
-            //if (View.Editor is DxGridListEditor gridListEditor) {
-            //           IDxGridAdapter dataGridAdapter = gridListEditor.GetGridAdapter();
-            //           dataGridAdapter.GridModel.ColumnResizeMode = DevExpress.Blazor.GridColumnResizeMode.ColumnsContainer;
-            //       }
-        }
-        protected override void OnDeactivated() {
-            base.OnDeactivated();
-        }
+    }
+    protected override void OnDeactivated() {
+        base.OnDeactivated();
     }
 }
+
