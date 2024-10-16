@@ -24,6 +24,9 @@ namespace dxTestSolution.Module.DatabaseUpdate {
             //    theObject = ObjectSpace.CreateObject<DomainObject1>();
             //    theObject.Name = name;
             //}
+			if(!ObjectSpace.CanInstantiate(typeof(Contact))) {
+				return;
+			}
             var cnt = ObjectSpace.GetObjects<Contact>().Count;
             if(cnt > 0) {
                 return;

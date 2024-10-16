@@ -59,10 +59,10 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.Security.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.v23.2, Version=23.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+	    <Reference Include="DevExpress.DataAccess.v23.2, Version=23.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
      <!--//report#4-->
 	 <!--//office#8-->
     <Reference Include="DevExpress.ExpressApp.Security.Xpo.v23.2">
@@ -252,7 +252,7 @@
   -->
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.4">
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.9">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
