@@ -34,7 +34,7 @@ namespace dxTestSolution.Module.BusinessObjects {
             }
         }
         Contact _assignedTo;
-        [Association("Contact-Tasks")]
+        [Association]
         public Contact AssignedTo {
             get {
                 return _assignedTo;

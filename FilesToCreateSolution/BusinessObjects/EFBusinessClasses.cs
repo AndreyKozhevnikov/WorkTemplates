@@ -21,6 +21,7 @@ public class Contact : BaseObject {
 public class MyTask : BaseObject {
     public virtual string Subject{get;set;}
     public virtual Contact AssignedTo{ get; set; }
+	public virtual bool IsActive { get; set; }
 }
 
    // public DbSet<MyTask> MyTasks { get; set; }

@@ -63,7 +63,7 @@ namespace dxTestSolution.Module.BusinessObjects {
         // }
         // }	
         //office#3		
-        [Association("Contact-Tasks")]
+        [Association]
         public XPCollection<MyTask> Tasks {
             get {
                 return GetCollection<MyTask>(nameof(Tasks));
