@@ -9,7 +9,7 @@
 		<AppDesignerFolder>Properties</AppDesignerFolder>
 		<RootNamespace>dxTestSolution.Module</RootNamespace>
 		<AssemblyName>dxTestSolution.Module</AssemblyName>
-		<TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+		<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
 		<FileUpgradeFlags>
 		</FileUpgradeFlags>
 		<UpgradeBackupLocation>
@@ -43,29 +43,29 @@
 		<ErrorReport>prompt</ErrorReport>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="DevExpress.Drawing.v23.2">
+		<Reference Include="DevExpress.Drawing.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Data.v23.2">
+		<Reference Include="DevExpress.Data.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.v23.2">
+		<Reference Include="DevExpress.ExpressApp.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Xpo.v23.2">
+		<Reference Include="DevExpress.ExpressApp.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.Base.v23.2">
+		<Reference Include="DevExpress.Persistent.Base.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.BaseImpl.Xpo.v23.2">
+		<Reference Include="DevExpress.Persistent.BaseImpl.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Printing.v23.2.Core">
+		<Reference Include="DevExpress.Printing.v24.2.Core">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Xpo.v23.2">
+		<Reference Include="DevExpress.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<!--//validation#1#-->
@@ -74,16 +74,16 @@
 		
 		
 
-		<Reference Include="DevExpress.ExpressApp.Security.v23.2, Version=23.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+		<Reference Include="DevExpress.ExpressApp.Security.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Security.Xpo.v23.2">
+		<Reference Include="DevExpress.ExpressApp.Security.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
 
 
-		<Reference Include="DevExpress.RichEdit.v23.2.Export">
+		<Reference Include="DevExpress.RichEdit.v24.2.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<Reference Include="System">
@@ -163,7 +163,7 @@
   -->
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.9">
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.2.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

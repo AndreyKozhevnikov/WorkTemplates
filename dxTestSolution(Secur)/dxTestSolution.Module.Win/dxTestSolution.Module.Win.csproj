@@ -9,7 +9,7 @@
 		<AppDesignerFolder>Properties</AppDesignerFolder>
 		<RootNamespace>dxTestSolution.Module.Win</RootNamespace>
 		<AssemblyName>dxTestSolution.Module.Win</AssemblyName>
-		<TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+		<TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
 		<FileUpgradeFlags>
 		</FileUpgradeFlags>
 		<UpgradeBackupLocation>
@@ -58,55 +58,55 @@
 		<ErrorReport>prompt</ErrorReport>
 	</PropertyGroup>
 	<ItemGroup>
-		<Reference Include="DevExpress.Drawing.v23.2">
+		<Reference Include="DevExpress.Drawing.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Data.v23.2">
+		<Reference Include="DevExpress.Data.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.v23.2">
+		<Reference Include="DevExpress.ExpressApp.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Win.v23.2">
+		<Reference Include="DevExpress.ExpressApp.Win.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.Xpo.v23.2">
+		<Reference Include="DevExpress.ExpressApp.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.Base.v23.2">
+		<Reference Include="DevExpress.Persistent.Base.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Persistent.BaseImpl.Xpo.v23.2">
+		<Reference Include="DevExpress.Persistent.BaseImpl.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Printing.v23.2.Core">
+		<Reference Include="DevExpress.Printing.v24.2.Core">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Data.Desktop.v23.2">
+		<Reference Include="DevExpress.Data.Desktop.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Utils.v23.2">
+		<Reference Include="DevExpress.Utils.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.Xpo.v23.2">
+		<Reference Include="DevExpress.Xpo.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraBars.v23.2">
+		<Reference Include="DevExpress.XtraBars.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraEditors.v23.2">
+		<Reference Include="DevExpress.XtraEditors.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraGrid.v23.2">
+		<Reference Include="DevExpress.XtraGrid.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraLayout.v23.2">
+		<Reference Include="DevExpress.XtraLayout.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraNavBar.v23.2">
+		<Reference Include="DevExpress.XtraNavBar.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.XtraPrinting.v23.2">
+		<Reference Include="DevExpress.XtraPrinting.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<!--//office#2#-->
@@ -114,20 +114,20 @@
 		<!--//validation#3#-->
 
 
-		<Reference Include="DevExpress.ExpressApp.ReportsV2.v23.2">
+		<Reference Include="DevExpress.ExpressApp.ReportsV2.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v23.2">
+		<Reference Include="DevExpress.ExpressApp.ReportsV2.Win.v24.2">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 
-		<Reference Include="DevExpress.Office.v23.2.Core">
+		<Reference Include="DevExpress.Office.v24.2.Core">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.RichEdit.v23.2.Core">
+		<Reference Include="DevExpress.RichEdit.v24.2.Core">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
-		<Reference Include="DevExpress.RichEdit.v23.2.Export">
+		<Reference Include="DevExpress.RichEdit.v24.2.Export">
 			<SpecificVersion>False</SpecificVersion>
 		</Reference>
 		<Reference Include="System">
@@ -217,7 +217,7 @@
   -->
 
   <ItemGroup>
-    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="23.2.9">
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" Version="24.2.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>

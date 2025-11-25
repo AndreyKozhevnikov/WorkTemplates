@@ -53,15 +53,15 @@ namespace dxTestSolution.Module.BusinessObjects {
                 SetPropertyValue(nameof(Age), ref _age, value);
             }
         }
-        // DateTime _birthDate;
-        // public DateTime BirthDate {
-        // get {
-        // return _birthDate;
-        // }
-        // set {
-        // SetPropertyValue(nameof(BirthDate), ref _birthDate, value);
-        // }
-        // }	
+        DateTime _birthDate;
+        public DateTime BirthDate {
+            get {
+                return _birthDate;
+            }
+            set {
+                SetPropertyValue(nameof(BirthDate), ref _birthDate, value);
+            }
+        }	
         //office#3		
         [Association]
         public XPCollection<MyTask> Tasks {
